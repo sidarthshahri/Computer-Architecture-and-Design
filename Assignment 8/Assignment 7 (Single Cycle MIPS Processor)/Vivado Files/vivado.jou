@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov  6 18:53:38 2019
+# Process ID: 3416
+# Current directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent812 C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 7\Assignment_7.xpr
+# Log file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/vivado.log
+# Journal file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source tb_mips_top.tcl
+close_sim

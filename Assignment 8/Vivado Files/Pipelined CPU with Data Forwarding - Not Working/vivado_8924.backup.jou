@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 26 03:46:48 2019
+# Process ID: 8924
+# Current directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6364 C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 8\Pipelined_CPU_Factorial_GPIO\Pipelined_CPU_Factorial_GPIO.xpr
+# Log file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/vivado.log
+# Journal file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_Pipelined_SoC.tcl
+close_sim
+launch_simulation
+source tb_Pipelined_SoC.tcl
+close_sim
+launch_simulation
+source tb_Pipelined_SoC.tcl
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_Single_Cycle_SoC.tcl
+current_project Pipelined_CPU_Factorial_GPIO
+current_sim simulation_3
+close_sim
+close_project
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.runs/impl_1/fpga_Single_Cycle_SoC.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.runs/impl_1/fpga_Single_Cycle_SoC.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw

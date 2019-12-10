@@ -1,0 +1,1162 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 7320
+License: Customer
+
+Current time: 	Tue Nov 26 12:13:50 GMT-08:00 2019
+Time zone: 	GMT-08:00 (GMT-08:00)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 3
+
+Screen size: 3840x2160
+Screen resolution (DPI): 192
+Available screens: 1
+Available disk space: 193 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=24
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Sidarth Shahri
+User home directory: C:/Users/Sidarth Shahri
+User working directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Sidarth Shahri/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Sidarth Shahri/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Sidarth Shahri/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/vivado.log
+Vivado journal file location: 	C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/vivado.jou
+Engine tmp dir: 	C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/.Xil/Vivado-7320-DESKTOP-U1OB0E7
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	384 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 596 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1406 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 8\Pipelined_CPU_Factorial_GPIO\Pipelined_CPU_Factorial_GPIO.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 84 MB. Current time: 11/26/19, 12:13:51 PM GMT-08:00
+// Tcl Message: open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 115 MB (+118102kb) [00:00:26]
+// [Engine Memory]: 644 MB (+524270kb) [00:00:26]
+// [GUI Memory]: 132 MB (+11751kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  8906 ms.
+// [Engine Memory]: 679 MB (+2018kb) [00:00:32]
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 882.602 ; gain = 76.742 
+// Project name: Pipelined_CPU_Factorial_GPIO; location: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO; part: xc7a35tcpg236-2L
+// [GUI Memory]: 139 MB (+532kb) [00:00:35]
+// [Engine Memory]: 715 MB (+2127kb) [00:00:35]
+dismissDialog("Open Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 750 MB. GUI used memory: 79 MB. Current time: 11/26/19, 12:14:12 PM GMT-08:00
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false, false, false, false, false, true); // u (Q, cp) - Double Click
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_Pipelined_SoC_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2018.3 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b200007855ac49cca7e9b1a2a6aad211 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Pipelined_SoC_behav xil_defaultlib.tb_Pipelined_SoC xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_Pipelined_SoC_behav -key {Behavioral:sim_1:Functional:tb_Pipelined_SoC} -tclbatch {tb_Pipelined_SoC.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1783 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source tb_Pipelined_SoC.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 750 MB. GUI used memory: 91 MB. Current time: 11/26/19, 12:14:48 PM GMT-08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// [GUI Memory]: 148 MB (+2161kb) [00:01:16]
+// [Engine Memory]: 771 MB (+21810kb) [00:01:16]
+// Tcl Message: # run 1000ns 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: $finish called at time : 560 ns : File "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" Line 120 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Pipelined_SoC_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// 'd' command handler elapsed time: 13 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 0); // k (j, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 776 MB. GUI used memory: 102 MB. Current time: 11/26/19, 12:14:53 PM GMT-08:00
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 801 MB. GUI used memory: 102 MB. Current time: 11/26/19, 12:14:58 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 157 MB (+1636kb) [00:01:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 804 MB. GUI used memory: 102 MB. Current time: 11/26/19, 12:15:00 PM GMT-08:00
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_Pipelined_SoC", "DesignTask.SIMULATION");
+// bx (cp):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1952 ms.
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+dismissDialog("Close"); // bx (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), Pipelined_SoC : Pipelined_SoC (Pipelined_SoC.v)]", 4); // B (D, cp)
+// PAPropertyPanels.initPanels (mips.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), Pipelined_SoC : Pipelined_SoC (Pipelined_SoC.v), mips : mips (mips.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), Pipelined_SoC : Pipelined_SoC (Pipelined_SoC.v), mips : mips (mips.v), pc_src_mux : mux2 (mux2.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), Pipelined_SoC : Pipelined_SoC (Pipelined_SoC.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), Pipelined_SoC : Pipelined_SoC (Pipelined_SoC.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), Pipelined_SoC : Pipelined_SoC (Pipelined_SoC.v)]", 4, true); // B (D, cp) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mips.v", 2); // k (j, cp)
+selectCodeEditor("mips.v", 671, 570); // cl (w, cp)
+selectCodeEditor("mips.v", 1541, 526); // cl (w, cp)
+selectCodeEditor("mips.v", 1089, 512); // cl (w, cp)
+selectCodeEditor("mips.v", 1553, 556); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("mips.v", 1505, 540); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mips.v", 17, 678); // cl (w, cp)
+selectCodeEditor("mips.v", 29, 680); // cl (w, cp)
+selectCodeEditor("mips.v", 23, 618); // cl (w, cp)
+selectCodeEditor("mips.v", 29, 578); // cl (w, cp)
+selectCodeEditor("mips.v", 27, 538); // cl (w, cp)
+selectCodeEditor("mips.v", 39, 508); // cl (w, cp)
+selectCodeEditor("mips.v", 37, 508); // cl (w, cp)
+selectCodeEditor("mips.v", 27, 516); // cl (w, cp)
+selectCodeEditor("mips.v", 21, 354); // cl (w, cp)
+selectCodeEditor("mips.v", 51, 186); // cl (w, cp)
+selectCodeEditor("mips.v", 137, 192); // cl (w, cp)
+selectCodeEditor("mips.v", 41, 148); // cl (w, cp)
+selectCodeEditor("mips.v", 31, 116); // cl (w, cp)
+selectCodeEditor("mips.v", 37, 86); // cl (w, cp)
+selectCodeEditor("mips.v", 463, 370); // cl (w, cp)
+selectCodeEditor("mips.v", 37, 342); // cl (w, cp)
+selectCodeEditor("mips.v", 513, 474); // cl (w, cp)
+selectCodeEditor("mips.v", 923, 534); // cl (w, cp)
+selectCodeEditor("mips.v", 13, 376); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("mips.v", 501, 610); // cl (w, cp)
+selectCodeEditor("mips.v", 13, 818); // cl (w, cp)
+selectCodeEditor("mips.v", 515, 710); // cl (w, cp)
+selectCodeEditor("mips.v", 477, 698); // cl (w, cp)
+selectCodeEditor("mips.v", 529, 704); // cl (w, cp)
+selectCodeEditor("mips.v", 43, 578); // cl (w, cp)
+selectCodeEditor("mips.v", 519, 454); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("mips.v", 341, 556); // cl (w, cp)
+selectCodeEditor("mips.v", 229, 578); // cl (w, cp)
+selectCodeEditor("mips.v", 299, 464); // cl (w, cp)
+selectCodeEditor("mips.v", 267, 534); // cl (w, cp)
+selectCodeEditor("mips.v", 453, 364); // cl (w, cp)
+selectCodeEditor("mips.v", 637, 352); // cl (w, cp)
+selectCodeEditor("mips.v", 853, 638); // cl (w, cp)
+selectCodeEditor("mips.v", 883, 604); // cl (w, cp)
+selectCodeEditor("mips.v", 887, 764); // cl (w, cp)
+selectCodeEditor("mips.v", 873, 654); // cl (w, cp)
+selectCodeEditor("mips.v", 1153, 442); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("mips.v", 533, 682); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("mips.v", 565, 682); // cl (w, cp)
+selectCodeEditor("mips.v", 1137, 674, true, false, false, false, false); // cl (w, cp) - Shift Key
+typeControlKey((HResource) null, "mips.v", 'c'); // cl (w, cp)
+selectCodeEditor("mips.v", 621, 860); // cl (w, cp)
+typeControlKey((HResource) null, "mips.v", 'v'); // cl (w, cp)
+selectCodeEditor("mips.v", 579, 572); // cl (w, cp)
+typeControlKey((HResource) null, "mips.v", 'v'); // cl (w, cp)
+selectCodeEditor("mips.v", 581, 580); // cl (w, cp)
+selectCodeEditor("mips.v", 623, 628); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("mips.v", 555, 730); // cl (w, cp)
+typeControlKey((HResource) null, "mips.v", 'v'); // cl (w, cp)
+selectCodeEditor("mips.v", 655, 558); // cl (w, cp)
+typeControlKey((HResource) null, "mips.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pipelined_SoC.v", 3); // k (j, cp)
+selectCodeEditor("Pipelined_SoC.v", 1487, 824); // cl (w, cp)
+selectCodeEditor("Pipelined_SoC.v", 1553, 836); // cl (w, cp)
+selectCodeEditor("Pipelined_SoC.v", 473, 714, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("Pipelined_SoC.v", 703, 670); // cl (w, cp)
+selectCodeEditor("Pipelined_SoC.v", 803, 548); // cl (w, cp)
+selectCodeEditor("Pipelined_SoC.v", 691, 500); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mips.v", 2); // k (j, cp)
+selectCodeEditor("mips.v", 687, 660); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pipelined_SoC.v", 3); // k (j, cp)
+selectCodeEditor("Pipelined_SoC.v", 903, 858); // cl (w, cp)
+selectCodeEditor("Pipelined_SoC.v", 505, 518, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("Pipelined_SoC.v", 709, 488); // cl (w, cp)
+selectCodeEditor("Pipelined_SoC.v", 7, 110, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("Pipelined_SoC.v", 457, 418); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_Pipelined_SoC.v", 1); // k (j, cp)
+selectCodeEditor("tb_Pipelined_SoC.v", 1369, 752); // cl (w, cp)
+selectCodeEditor("tb_Pipelined_SoC.v", 391, 616, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("tb_Pipelined_SoC.v", 557, 576); // cl (w, cp)
+selectCodeEditor("tb_Pipelined_SoC.v", 3, 346, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("tb_Pipelined_SoC.v", 809, 788); // cl (w, cp)
+selectCodeEditor("tb_Pipelined_SoC.v", 451, 414, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("tb_Pipelined_SoC.v", 685, 382); // cl (w, cp)
+selectCodeEditor("tb_Pipelined_SoC.v", 9, 118, true, false, false, false, false); // cl (w, cp) - Shift Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: "xvlog --incr --relax -prj tb_Pipelined_SoC_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '5' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot tb_Pipelined_SoC_behav  ****** Webtalk v2018.3 (64-bit)   **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Users/Sidarth -notrace couldn't read file "C:/Users/Sidarth": no such file or directory INFO: [Common 17-206] Exiting Webtalk at Tue Nov 26 12:20:25 2019... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_Pipelined_SoC_behav -key {Behavioral:sim_1:Functional:tb_Pipelined_SoC} -tclbatch {tb_Pipelined_SoC.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1462 ms.
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source tb_Pipelined_SoC.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 804 MB. GUI used memory: 164 MB. Current time: 11/26/19, 12:20:29 PM GMT-08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 560 ns : File "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" Line 85 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Pipelined_SoC_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// 'd' command handler elapsed time: 16 seconds
+// [GUI Memory]: 188 MB (+23948kb) [00:06:58]
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 3); // k (j, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 804 MB. GUI used memory: 144 MB. Current time: 11/26/19, 12:20:44 PM GMT-08:00
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 806 MB. GUI used memory: 107 MB. Current time: 11/26/19, 12:20:48 PM GMT-08:00
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 3199, 89); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 2653, 44); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [Engine Memory]: 813 MB (+3055kb) [00:07:17]
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 3050, 307); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 813 MB. GUI used memory: 107 MB. Current time: 11/26/19, 12:20:53 PM GMT-08:00
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 3164, 268); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_Pipelined_SoC", "DesignTask.SIMULATION");
+// bx (cp):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  2764 ms.
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// [Engine Memory]: 870 MB (+17877kb) [00:07:31]
+dismissDialog("Close"); // bx (cp)
+// RDIResource.RDIViews_PROPERTIES: Source File Properties: close view
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 15); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), Pipelined_SoC : Pipelined_SoC (Pipelined_SoC.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), Pipelined_SoC : Pipelined_SoC (Pipelined_SoC.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 215 seconds
+selectCodeEditor("Pipelined_SoC.v", 1047, 604); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("fpga_Pipelined_SoC.v", 315, 638); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pipelined_SoC.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pipelined_SoC.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pipelined_SoC.v", 3); // k (j, cp)
+selectCodeEditor("Pipelined_SoC.v", 191, 836); // cl (w, cp)
+selectCodeEditor("Pipelined_SoC.v", 119, 850); // cl (w, cp)
+typeControlKey((HResource) null, "Pipelined_SoC.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 239, 770); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1268 ms.
+selectCodeEditor("fpga_Pipelined_SoC.v", 197, 754); // cl (w, cp)
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 501, 248); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 509, 276); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 513, 322); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 517, 352); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 517, 380); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 503, 316); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 655, 304); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 651, 292); // cl (w, cp)
+// Elapsed time: 138 seconds
+selectCodeEditor("fpga_Pipelined_SoC.v", 603, 50); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 533, 270); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 485, 252); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// D (cp): Invalid Top Module: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // D (cp)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 11); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, fpga_Pipelined_SoC.v]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, fpga_Pipelined_SoC.v]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("fpga_Pipelined_SoC.v", 575, 530); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 651, 214); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 659, 480); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("fpga_Pipelined_SoC.v", 175, 544); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 115, 544); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 143, 852, true, false, false, false, false); // cl (w, cp) - Shift Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("fpga_Pipelined_SoC.v", 577, 484); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), bd : button_debouncer (button_debouncer.v)]", 3, false); // B (D, cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// Tcl Message: set_property top fpga_Pipelined_SoC [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 17, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 17, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SRC, "Copy File Into Project"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_SRC
+// bV (cp): Import Source Conflicts: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bV)
+dismissDialog("Import Source Conflicts"); // bV (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 17, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v), fgpa_mux : mux2 (mux2.v)]", 21, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pipelined_SoC.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 17); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fpga_Single_Cycle_SoC (tb_fpga_Single_Cycle_SoC.v)]", 20, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fpga_Single_Cycle_SoC (tb_fpga_Single_Cycle_SoC.v)]", 20, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 193, 576); // cl (w, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 193, 576, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 163, 708); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 163, 708, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fpga_Single_Cycle_SoC.v", 5); // k (j, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 255, 168); // cl (w, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 255, 168, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "tb_fpga_Single_Cycle_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 511, 354); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 83, 706); // cl (w, cp)
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fpga_Single_Cycle_SoC.v", 5); // k (j, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 699, 428); // cl (w, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 733, 470); // cl (w, cp)
+typeControlKey((HResource) null, "tb_fpga_Single_Cycle_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 39, 538, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 475, 460); // cl (w, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 479, 572); // cl (w, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 135, 848); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 387, 684); // cl (w, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 387, 684, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 415, 668); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 569, 676); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 363, 682); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fpga_Single_Cycle_SoC (tb_fpga_Single_Cycle_SoC.v)]", 19, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top tb_fpga_Single_Cycle_SoC [get_filesets sim_1] 
+// bx (cp):  Set as Top : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: "xvlog --incr --relax -prj tb_fpga_Single_Cycle_SoC_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '7' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 16 seconds
+// Elapsed time: 16 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (C, I)
+// a (cp): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 577, 126); // dr (af, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 697, 224); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 273, 732); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pipelined_SoC.v", 3); // k (j, cp)
+selectCodeEditor("Pipelined_SoC.v", 499, 732); // cl (w, cp)
+selectCodeEditor("Pipelined_SoC.v", 425, 806); // cl (w, cp)
+selectCodeEditor("Pipelined_SoC.v", 425, 806, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Pipelined_SoC.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 237, 354); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 237, 354, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fpga_Single_Cycle_SoC.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: "xvlog --incr --relax -prj tb_fpga_Single_Cycle_SoC_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '8' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// Tcl Message: Built simulation snapshot tb_fpga_Single_Cycle_SoC_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:  ****** Webtalk v2018.3 (64-bit)   **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Users/Sidarth -notrace couldn't read file "C:/Users/Sidarth": no such file or directory INFO: [Common 17-206] Exiting Webtalk at Tue Nov 26 12:32:10 2019... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_fpga_Single_Cycle_SoC_behav -key {Behavioral:sim_1:Functional:tb_fpga_Single_Cycle_SoC} -tclbatch {tb_fpga_Single_Cycle_SoC.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1462 ms.
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: source tb_fpga_Single_Cycle_SoC.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 886 MB. GUI used memory: 148 MB. Current time: 11/26/19, 12:32:13 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fpga_Single_Cycle_SoC_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1005.938 ; gain = 0.000 
+// 'd' command handler elapsed time: 19 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 893 MB. GUI used memory: 167 MB. Current time: 11/26/19, 12:32:18 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 116 MB. Current time: 11/26/19, 12:32:23 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 117 MB. Current time: 11/26/19, 12:32:25 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 159 MB. Current time: 11/26/19, 12:32:27 PM GMT-08:00
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 117 MB. Current time: 11/26/19, 12:32:38 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 116 MB. Current time: 11/26/19, 12:32:38 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 116 MB. Current time: 11/26/19, 12:32:38 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fpga_Single_Cycle_SoC.v", 4); // k (j, cp)
+// Elapsed time: 347 seconds
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 1755, 766); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fpga_Single_Cycle_SoC.v", 4); // k (j, cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_fpga_Single_Cycle_SoC", "DesignTask.SIMULATION");
+// bx (cp):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  2062 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bx (cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fpga_Single_Cycle_SoC (tb_fpga_Single_Cycle_SoC.v)]", 16); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_Pipelined_SoC (fpga_Pipelined_SoC.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("fpga_Pipelined_SoC.v", 535, 818); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 535, 818, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("fpga_Pipelined_SoC.v", 705, 800); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fpga_Single_Cycle_SoC.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 4); // k (j, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 509, 816); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 509, 816, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 733, 802); // cl (w, cp)
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 547, 800); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 547, 800, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 14 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 26 12:39:43 2019] Launched synth_1... Run output will be captured here: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.runs/synth_1/runme.log [Tue Nov 26 12:39:43 2019] Launched impl_1... Run output will be captured here: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 247 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1966 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5536 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB4454A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,821 MB. GUI used memory: 105 MB. Current time: 11/26/19, 12:44:12 PM GMT-08:00
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1913.840 ; gain = 907.902 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.runs/impl_1/fpga_Pipelined_SoC.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,821 MB (+951382kb) [00:30:40]
+// Elapsed time: 12 seconds
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.runs/impl_1/fpga_Pipelined_SoC.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ac (cp)
+// Elapsed time: 10 seconds
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Opening Vivado Project: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (C, I)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr} 
+// TclEventType: FILE_SET_NEW
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  4954 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,854 MB. GUI used memory: 116 MB. Current time: 11/26/19, 12:44:42 PM GMT-08:00
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1934.285 ; gain = 15.414 
+// Project name: Single_Cycle_with_Factorial_GPIO; location: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO; part: xc7a35tcpg236-2L
+// Elapsed time: 11 seconds
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 1,928 MB (+16097kb) [00:31:15]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 50 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// bx (cp):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  3268 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 521, 805); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 521, 805, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("fpga_Pipelined_SoC.v", 529, 609); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 529, 609, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 497, 823); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 497, 823, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project Pipelined_CPU_Factorial_GPIO 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 26 04:46:20 2019] Launched synth_1... Run output will be captured here: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.runs/synth_1/runme.log [Tue Nov 26 04:46:20 2019] Launched impl_1... Run output will be captured here: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 17 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Queued... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2018) ; Vivado Implementation Default Reports (Vivado Implementation 2018) ; xc7a35tcpg236-2L ; Default settings for Implementation.", 1, "Queued...", 2, false); // ax (Q, cp)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.8s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Queued... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2018) ; Vivado Implementation Default Reports (Vivado Implementation 2018) ; xc7a35tcpg236-2L ; Default settings for Implementation.", 1, "Queued...", 2, false); // ax (Q, cp)
+// Elapsed time: 28861 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fpga_Single_Cycle_SoC.v", 5); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_fpga_Single_Cycle_SoC_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2353.590 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '8' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// Tcl Message: Built simulation snapshot tb_fpga_Single_Cycle_SoC_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_fpga_Single_Cycle_SoC_behav -key {Behavioral:sim_1:Functional:tb_fpga_Single_Cycle_SoC} -tclbatch {tb_fpga_Single_Cycle_SoC.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.4s
+// WARNING: HEventQueue.dispatchEvent() is taking  3056 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 18 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: RUN_COMPLETED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source tb_fpga_Single_Cycle_SoC.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 131 MB. Current time: 11/26/19, 12:48:05 PM GMT-08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  1498 ms.
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2362.074 ; gain = 8.484 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fpga_Single_Cycle_SoC_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 2362.074 ; gain = 10.500 
+// 'd' command handler elapsed time: 23 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 199 MB (+1638kb) [00:34:38]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 139 MB. Current time: 11/26/19, 12:48:11 PM GMT-08:00
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 140 MB. Current time: 11/26/19, 12:48:15 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 140 MB. Current time: 11/26/19, 12:48:17 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 140 MB. Current time: 11/26/19, 12:48:17 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 140 MB. Current time: 11/26/19, 12:48:18 PM GMT-08:00
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -1528, -858); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -1414, -792); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 136 MB. Current time: 11/26/19, 12:48:29 PM GMT-08:00
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fpga_Single_Cycle_SoC.xdc]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fpga_Single_Cycle_SoC.xdc]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// [GUI Memory]: 210 MB (+876kb) [00:34:59]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fpga_Single_Cycle_SoC.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pipelined_SoC.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Single_Cycle_SoC.xdc", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4", 5); // k (j, cp)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -1460, -510); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -1424, -612); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 152 MB. Current time: 11/26/19, 12:48:55 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 137 MB. Current time: 11/26/19, 12:49:02 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 142 MB. Current time: 11/26/19, 12:49:02 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 137 MB. Current time: 11/26/19, 12:49:03 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 137 MB. Current time: 11/26/19, 12:49:03 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 137 MB. Current time: 11/26/19, 12:49:04 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 137 MB. Current time: 11/26/19, 12:49:05 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 153 MB. Current time: 11/26/19, 12:49:05 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 151 MB. Current time: 11/26/19, 12:49:06 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fpga_Single_Cycle_SoC.v", 4); // k (j, cp)
+selectCodeEditor("tb_fpga_Single_Cycle_SoC.v", 271, 1264); // cl (w, cp)
+// [GUI Memory]: 222 MB (+1432kb) [00:35:44]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pipelined_SoC.v", 2); // k (j, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 3); // k (j, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 471, 678); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 451, 684); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 463, 674); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 205, 706); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 205, 706, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 471, 716); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 463, 724); // cl (w, cp)
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'v'); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 515, 624); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 503, 686); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 503, 686, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'c'); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 441, 860); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 493, 978); // cl (w, cp)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "fpga_Pipelined_SoC.v", 'v'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("fpga_Pipelined_SoC.v", 493, 1228); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 493, 1228, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("fpga_Pipelined_SoC.v", 423, 520); // cl (w, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 463, 184); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1187 ms.
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Elapsed time: 13 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fpga_Pipelined_SoC.v", 3); // k (j, cp)
+selectCodeEditor("fpga_Pipelined_SoC.v", 865, 398); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeMainWindow("Pipelined_CPU_Factorial_GPIO - [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.xpr] - Vivado 2018.3"); // cp
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'

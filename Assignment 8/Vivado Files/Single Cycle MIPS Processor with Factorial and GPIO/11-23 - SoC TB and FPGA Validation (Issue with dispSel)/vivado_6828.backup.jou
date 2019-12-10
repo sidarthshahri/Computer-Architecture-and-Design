@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Nov 21 14:37:09 2019
+# Process ID: 6828
+# Current directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7176 C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 8\Single_Cycle_with_Factorial_GPIO\Single_Cycle_with_Factorial_GPIO.xpr
+# Log file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/vivado.log
+# Journal file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+open_project {C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.xpr}
+current_project Single_Cycle_with_Factorial_GPIO
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v}}
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v}}
+update_compile_order -fileset sources_1
+current_project CMPE140_SoC_single_cycle
+synth_design -rtl -name rtl_1
+current_project Single_Cycle_with_Factorial_GPIO
+current_project CMPE140_SoC_single_cycle
+close_design
+current_project Single_Cycle_with_Factorial_GPIO
+current_project CMPE140_SoC_single_cycle
+current_project Single_Cycle_with_Factorial_GPIO
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v}}
+update_compile_order -fileset sources_1
+current_project CMPE140_SoC_single_cycle
+current_project Single_Cycle_with_Factorial_GPIO
+open_project {C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/A8_Week3/A8_Week3.xpr}
+update_compile_order -fileset sources_1
+current_project Single_Cycle_with_Factorial_GPIO
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top gpio_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+close_design
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 1/Assignment_1.xpr}
+update_compile_order -fileset sources_1
+current_project Single_Cycle_with_Factorial_GPIO
+close_design
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sim_1/new/tb_gpio_top.v} w ]
+add_files -fileset sim_1 {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sim_1/new/tb_gpio_top.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_gpio_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source tb_gpio_top.tcl
+close_sim
+close_project
+close_project
+current_project CMPE140_SoC_single_cycle
+close_project

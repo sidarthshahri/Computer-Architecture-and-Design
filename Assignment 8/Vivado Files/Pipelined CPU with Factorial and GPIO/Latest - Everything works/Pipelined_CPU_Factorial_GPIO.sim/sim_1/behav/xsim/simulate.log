@@ -1,0 +1,3 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+$finish called at time : 550 ns : File "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" Line 85

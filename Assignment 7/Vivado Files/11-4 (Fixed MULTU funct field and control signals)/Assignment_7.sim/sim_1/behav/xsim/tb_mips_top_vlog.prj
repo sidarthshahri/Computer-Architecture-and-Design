@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/adder.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/alu.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/auxdec.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/controlunit.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/datapath.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/dreg.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/imem.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/maindec.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips_top.v" \
+"../../../../Assignment_7.srcs/sources_1/new/mult.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v" \
+"../../../../Assignment_7.srcs/sources_1/new/shifter.v" \
+"../../../../Assignment_7.srcs/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/signext.v" \
+"../../../../Assignment_7.srcs/sources_1/new/we_dreg.v" \
+"../../../../Assignment_7.srcs/sim_1/imports/testbench/tb_mips_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

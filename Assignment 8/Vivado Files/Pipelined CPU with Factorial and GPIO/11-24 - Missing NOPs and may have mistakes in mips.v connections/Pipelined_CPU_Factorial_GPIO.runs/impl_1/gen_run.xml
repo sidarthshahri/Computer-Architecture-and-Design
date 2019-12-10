@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-2L" LaunchTime="1574577110">
+  <File Type="ROUTE-PWR" Name="fpga_Single_Cycle_SoC_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="fpga_Single_Cycle_SoC.tcl"/>
+  <File Type="BITSTR-BMM" Name="fpga_Single_Cycle_SoC_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="fpga_Single_Cycle_SoC_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="fpga_Single_Cycle_SoC_reports.tcl"/>
+  <File Type="OPT-DCP" Name="fpga_Single_Cycle_SoC_opt.dcp"/>
+  <File Type="OPT-DRC" Name="fpga_Single_Cycle_SoC_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fpga_Single_Cycle_SoC.hwdef"/>
+  <File Type="PWROPT-DCP" Name="fpga_Single_Cycle_SoC_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="fpga_Single_Cycle_SoC_placed.dcp"/>
+  <File Type="PLACE-IO" Name="fpga_Single_Cycle_SoC_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fpga_Single_Cycle_SoC_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fpga_Single_Cycle_SoC_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="fpga_Single_Cycle_SoC_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fpga_Single_Cycle_SoC_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="fpga_Single_Cycle_SoC.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fpga_Single_Cycle_SoC_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="fpga_Single_Cycle_SoC.bin"/>
+  <File Type="PHYSOPT-DCP" Name="fpga_Single_Cycle_SoC_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="fpga_Single_Cycle_SoC.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fpga_Single_Cycle_SoC_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="fpga_Single_Cycle_SoC_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fpga_Single_Cycle_SoC_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="fpga_Single_Cycle_SoC_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fpga_Single_Cycle_SoC_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="fpga_Single_Cycle_SoC_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="fpga_Single_Cycle_SoC.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fpga_Single_Cycle_SoC_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="fpga_Single_Cycle_SoC.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fpga_Single_Cycle_SoC_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fpga_Single_Cycle_SoC_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="fpga_Single_Cycle_SoC.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="fpga_Single_Cycle_SoC_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="fpga_Single_Cycle_SoC_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fpga_Single_Cycle_SoC_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fpga_Single_Cycle_SoC_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="fpga_Single_Cycle_SoC_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fpga_Single_Cycle_SoC_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="fpga_Single_Cycle_SoC_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fpga_Single_Cycle_SoC_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fpga_Single_Cycle_SoC_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fpga_Single_Cycle_SoC_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fpga_Single_Cycle_SoC_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fpga_Single_Cycle_SoC_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="fpga_Single_Cycle_SoC.bit"/>
+  <File Type="BITSTR-RBT" Name="fpga_Single_Cycle_SoC.rbt"/>
+  <File Type="BITSTR-NKY" Name="fpga_Single_Cycle_SoC.nky"/>
+  <File Type="BG-DRC" Name="fpga_Single_Cycle_SoC.drc"/>
+  <File Type="RDI-RDI" Name="fpga_Single_Cycle_SoC.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Factorial/CMP_ERROR.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/Factorial/CMP_ERROR.v"/>
+        <Attr Name="ImportTime" Val="1574562798"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Factorial/CMP_GT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/Factorial/CMP_GT.v"/>
+        <Attr Name="ImportTime" Val="1574562800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Factorial/CNT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/Factorial/CNT.v"/>
+        <Attr Name="ImportTime" Val="1574562802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Factorial/CU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/Factorial/CU.v"/>
+        <Attr Name="ImportTime" Val="1574562802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Factorial/DP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/Factorial/DP.v"/>
+        <Attr Name="ImportTime" Val="1574562804"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Factorial/Factorial.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/Factorial/Factorial.v"/>
+        <Attr Name="ImportTime" Val="1574562806"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Factorial/MUL.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/Factorial/MUL.v"/>
+        <Attr Name="ImportTime" Val="1574562806"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Factorial/MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/Factorial/MUX.v"/>
+        <Attr Name="ImportTime" Val="1574562808"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/Factorial/REG.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/Factorial/REG.v"/>
+        <Attr Name="ImportTime" Val="1574562808"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/Single_Cycle_SoC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/Single_Cycle_SoC.v"/>
+        <Attr Name="ImportTime" Val="1574562790"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/SoC_ad.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/SoC_ad.v"/>
+        <Attr Name="ImportTime" Val="1574562792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/SoC_mux4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/SoC_mux4.v"/>
+        <Attr Name="ImportTime" Val="1574562792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/adder.v"/>
+        <Attr Name="ImportTime" Val="1574563082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/alu.v"/>
+        <Attr Name="ImportTime" Val="1574563084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/auxdec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/auxdec.v"/>
+        <Attr Name="ImportTime" Val="1574563076"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/FPGA/button_debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/FPGA/button_debouncer.v"/>
+        <Attr Name="ImportTime" Val="1574562810"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/FPGA/clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/FPGA/clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1574562812"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/controlunit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/controlunit.v"/>
+        <Attr Name="ImportTime" Val="1574562774"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/datapath.v"/>
+        <Attr Name="ImportTime" Val="1574563084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/dmem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/dmem.v"/>
+        <Attr Name="ImportTime" Val="1574563090"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/dreg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/dreg.v"/>
+        <Attr Name="ImportTime" Val="1574563086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/fact_ad.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/fact_ad.v"/>
+        <Attr Name="ImportTime" Val="1574562774"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/fact_and.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/fact_and.v"/>
+        <Attr Name="ImportTime" Val="1574562776"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/fact_done_stat_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/fact_done_stat_reg.v"/>
+        <Attr Name="ImportTime" Val="1574562778"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/fact_err_stat_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/fact_err_stat_reg.v"/>
+        <Attr Name="ImportTime" Val="1574562778"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/fact_mux4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/fact_mux4.v"/>
+        <Attr Name="ImportTime" Val="1574562780"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/fact_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/fact_reg.v"/>
+        <Attr Name="ImportTime" Val="1574562782"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/fact_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/fact_top.v"/>
+        <Attr Name="ImportTime" Val="1574562782"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/gpio_ad.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/gpio_ad.v"/>
+        <Attr Name="ImportTime" Val="1574562786"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/gpio_mux4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/gpio_mux4.v"/>
+        <Attr Name="ImportTime" Val="1574562786"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/gpio_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/gpio_reg.v"/>
+        <Attr Name="ImportTime" Val="1574562788"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/gpio_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/gpio_top.v"/>
+        <Attr Name="ImportTime" Val="1574562788"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/FPGA/hex_to_7seg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/FPGA/hex_to_7seg.v"/>
+        <Attr Name="ImportTime" Val="1574562812"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/imem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/imem.v"/>
+        <Attr Name="ImportTime" Val="1574563092"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/FPGA/led_mux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/FPGA/led_mux.v"/>
+        <Attr Name="ImportTime" Val="1574562814"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/maindec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/maindec.v"/>
+        <Attr Name="ImportTime" Val="1574563078"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/mips.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/mips.v"/>
+        <Attr Name="ImportTime" Val="1574563094"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/mult.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/mult.v"/>
+        <Attr Name="ImportTime" Val="1574562908"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/mux2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/mux2.v"/>
+        <Attr Name="ImportTime" Val="1574563086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/regfile.v"/>
+        <Attr Name="ImportTime" Val="1574563088"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/shifter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/shifter.v"/>
+        <Attr Name="ImportTime" Val="1574562910"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/signext.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/signext.v"/>
+        <Attr Name="ImportTime" Val="1574563090"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/we_dreg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/we_dreg.v"/>
+        <Attr Name="ImportTime" Val="1574562910"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/SoC/fpga_Single_Cycle_SoC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/fpga_Single_Cycle_SoC.v"/>
+        <Attr Name="ImportTime" Val="1574562784"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SoC/memfile.dat">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/sources/SoC/memfile.dat"/>
+        <Attr Name="ImportTime" Val="1574562796"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fpga_Single_Cycle_SoC"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/fpga_Single_Cycle_SoC.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Assignment 8 Source Files/constraints/fpga_Single_Cycle_SoC.xdc"/>
+        <Attr Name="ImportTime" Val="1574562764"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

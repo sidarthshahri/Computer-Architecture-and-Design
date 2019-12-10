@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct 18 15:31:14 2019
+# Process ID: 7412
+# Current directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5264 C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 6\Vivado Files\Assignment_5.xpr
+# Log file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/vivado.log
+# Journal file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.xpr}
+update_compile_order -fileset sources_1
+import_files -norecurse {Z:/Downloads/basys3_single_cycle_mips_validation/led_mux.v Z:/Downloads/basys3_single_cycle_mips_validation/button_debouncer.v Z:/Downloads/basys3_single_cycle_mips_validation/mips_fpga.v Z:/Downloads/basys3_single_cycle_mips_validation/hex_to_7seg.v Z:/Downloads/basys3_single_cycle_mips_validation/clk_gen.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse Z:/Downloads/basys3_single_cycle_mips_validation/mips_fpga.xdc
+import_files -fileset constrs_1 Z:/Downloads/basys3_single_cycle_mips_validation/mips_fpga.xdc
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+launch_simulation
+source tb_mips_top.tcl
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+synth_design -rtl -name rtl_1
+close_design
+close_hw
+import_files -norecurse {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 5/Vivado Files/Assignment_5.srcs/sim_1/imports/single_cycle_mips_source_initial/memfile.dat}}
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.runs/impl_1/mips_fpga.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim

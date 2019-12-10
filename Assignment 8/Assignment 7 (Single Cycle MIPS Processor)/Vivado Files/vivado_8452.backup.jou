@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Nov  2 17:19:07 2019
+# Process ID: 8452
+# Current directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7524 C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 7\Assignment_7.xpr
+# Log file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/vivado.log
+# Journal file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 6/Vivado Files/Assignment_5.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+current_project Assignment_7
+close_design
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new
+file mkdir {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new}
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new/we_dreg.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new/we_dreg.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new/mult.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new/mult.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new/shifter.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/new/shifter.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+current_project Assignment_5
+current_project Assignment_7
+current_project Assignment_5
+current_project Assignment_7
+current_project Assignment_5
+current_project Assignment_7
+close_design
+current_project Assignment_5
+close_design
+synth_design -rtl -name rtl_1
+current_project Assignment_7
+synth_design -rtl -name rtl_1
+current_project Assignment_5
+current_project Assignment_7
+refresh_design
+current_project Assignment_5
+close_design
+current_project Assignment_7
+refresh_design
+close_design
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sim_1/imports/single_cycle_mips_source_initial/memfile.dat}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sim_1/imports/single_cycle_mips_source_initial/memfile.dat}}
+file delete -force {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sim_1/imports/single_cycle_mips_source_initial/memfile.dat}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/imports/single_cycle_mips_source_initial/memfile.dat}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/imports/single_cycle_mips_source_initial/memfile.dat}}
+file delete -force {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/Assignment_7.srcs/sources_1/imports/single_cycle_mips_source_initial/memfile.dat}
+current_project Assignment_5
+close_project
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/memfile.dat}}
+import_files -norecurse {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 7/memfile.dat}}
+launch_simulation
+source tb_mips_top.tcl
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim

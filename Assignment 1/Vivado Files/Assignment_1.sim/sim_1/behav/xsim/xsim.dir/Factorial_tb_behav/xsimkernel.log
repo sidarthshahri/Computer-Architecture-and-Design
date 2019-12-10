@@ -1,0 +1,7 @@
+Running: xsim.dir/Factorial_tb_behav/xsimk.exe -simmode gui -wdb Factorial_tb_behav.wdb -simrunnum 0 -socket 50256
+Design successfully loaded
+Design Loading Memory Usage: 5392 KB (Peak: 5392 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 6148 KB (Peak: 6148 KB)
+Simulation CPU Usage: 31 ms

@@ -1,0 +1,155 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Nov 26 14:13:50 2019
+| Host         : DESKTOP-U1OB0E7 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fpga_Pipelined_SoC_control_sets_placed.rpt
+| Design       : fpga_Pipelined_SoC
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    89 |
+| Unused register locations in slices containing registers |    92 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      8 |            1 |
+|    16+ |           87 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              40 |           20 |
+| No           | No                    | Yes                    |             474 |          195 |
+| No           | Yes                   | No                     |              33 |            9 |
+| Yes          | No                    | No                     |            2017 |          738 |
+| Yes          | No                    | Yes                    |             585 |          180 |
+| Yes          | Yes                   | No                     |              31 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                          Enable Signal                          |                             Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/E[0]                        | rst_IBUF                                                                 |                1 |              4 |
+|  clk_5KHz_BUFG |                                                                 |                                                                          |                3 |              8 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__7_9    |                                                                          |               12 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[6]_5           |                                                                          |               10 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_7           |                                                                          |               10 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[5]_rep_0       |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_11          |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/factorial_accelerator/factorial/CU0/load_reg      | Pipelined_SoC/factorial_accelerator/factorial/CU0/FSM_onehot_cs_reg[1]_0 |               10 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_9    |                                                                          |               17 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__7_3    |                                                                          |                7 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__1_4    |                                                                          |               15 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_10   |                                                                          |               10 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_12   |                                                                          |               14 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__7_1    |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__7_5    |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__7_7    |                                                                          |               19 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__1_3    |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__1_1    |                                                                          |               13 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__1_5    |                                                                          |               17 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_0    |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[3]_rep__5_1    |                                                                          |                6 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_1    |                                                                          |               10 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_11   |                                                                          |                5 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__7_2    |                                                                          |                9 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__7_8    |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__1_2    |                                                                          |               13 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_13   |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__3_1    |                                                                          |                9 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_14   |                                                                          |               12 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[3]_rep__2_1    |                                                                          |                7 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__3_3    |                                                                          |                9 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__7_4    |                                                                          |               12 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__3_2    |                                                                          |               12 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[3]_rep__8_2    |                                                                          |                8 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_15   |                                                                          |               24 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__7_6    |                                                                          |               16 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[3]_rep__8_1    |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_4    |                                                                          |               14 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_2    |                                                                          |                9 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_8    |                                                                          |                7 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[5]_rep_4       |                                                                          |               13 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_9           |                                                                          |               14 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[5]_rep_2       |                                                                          |               10 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[5]_rep_3       |                                                                          |                8 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_3    |                                                                          |                5 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[6]_4           |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_0           |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_6    |                                                                          |               19 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_3           |                                                                          |                8 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_17   |                                                                          |                9 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[6]_6           |                                                                          |               10 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[6]_1           |                                                                          |               13 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_16   |                                                                          |                7 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_1           |                                                                          |               13 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[6]_2           |                                                                          |               10 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[6]_0           |                                                                          |               16 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_10          |                                                                          |               16 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_5           |                                                                          |                8 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_6           |                                                                          |               11 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_8           |                                                                          |                9 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_5    |                                                                          |               19 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_4           |                                                                          |                7 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[7]_2           |                                                                          |               12 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[6]_7           |                                                                          |               14 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[6]_3           |                                                                          |               10 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[4]_rep__3_7    |                                                                          |               12 |             31 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[5]_rep_1       |                                                                          |                9 |             31 |
+|  n_0_623_BUFG  |                                                                 |                                                                          |               17 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/factorial_accelerator/factorial/CU0/Q[3]          | rst_IBUF                                                                 |               11 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/E[0]                        | rst_IBUF                                                                 |                9 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[3]_rep__1_1[0] | rst_IBUF                                                                 |               11 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_0[0]            | rst_IBUF                                                                 |                7 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_4[0]            | rst_IBUF                                                                 |                9 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_7[0]            | rst_IBUF                                                                 |               11 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_3[0]            | rst_IBUF                                                                 |                9 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_1[0]            | rst_IBUF                                                                 |               10 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_11[0]           | rst_IBUF                                                                 |               13 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_9[0]            | rst_IBUF                                                                 |               10 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_8[0]            | rst_IBUF                                                                 |                9 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_12[0]           | rst_IBUF                                                                 |               12 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_13[0]           | rst_IBUF                                                                 |               11 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_2[0]            | rst_IBUF                                                                 |               10 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_10[0]           | rst_IBUF                                                                 |               11 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_6[0]            | rst_IBUF                                                                 |                9 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/MEM_WB_State_Reg/we_regW_reg_5[0]            | rst_IBUF                                                                 |                8 |             32 |
+|  clk_5KHz_BUFG | Pipelined_SoC/factorial_accelerator/factorial/CU0/load_reg      |                                                                          |                9 |             33 |
+|  clk_IBUF_BUFG |                                                                 | rst_IBUF                                                                 |                9 |             33 |
+|  clk_5KHz_BUFG | Pipelined_SoC/mips/EX_MEM_State_Reg/alu_outM_reg[2]_rep__0_1[0] | rst_IBUF                                                                 |                9 |             37 |
+|  clk_5KHz_BUFG |                                                                 | rst_IBUF                                                                 |              195 |            474 |
++----------------+-----------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+
+

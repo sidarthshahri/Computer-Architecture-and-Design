@@ -1,0 +1,53 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/forwarding_logic.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/mux3.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v" \
+"../../../../Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

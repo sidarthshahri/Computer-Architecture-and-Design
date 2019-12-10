@@ -1,0 +1,800 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec  3 03:42:30 2019
+# Process ID: 4480
+# Current directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8624 C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 8\Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding\Pipelined_CPU_Factorial_GPIO.xpr
+# Log file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/vivado.log
+# Journal file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 677.609 ; gain = 112.598
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/forwarding_logic.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/forwarding_logic.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/mux3.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/mux3.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Pipelined_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Pipelined_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_ERROR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_GT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DE_EX_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FE_DE_Stage_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_done_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_err_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module we_dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Pipelined_SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 827.148 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b200007855ac49cca7e9b1a2a6aad211 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Pipelined_SoC_behav xil_defaultlib.tb_Pipelined_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <fowarding_logic> not found while processing module instance <fwd_logic> [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:492]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 827.148 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Pipelined_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Pipelined_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_ERROR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_GT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DE_EX_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FE_DE_Stage_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_done_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_err_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/forwarding_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwarding_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module we_dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Pipelined_SoC
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 827.148 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b200007855ac49cca7e9b1a2a6aad211 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Pipelined_SoC_behav xil_defaultlib.tb_Pipelined_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.FE_DE_Stage_Reg
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.DE_EX_State_Reg
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.EX_MEM_State_Reg
+Compiling module xil_defaultlib.we_dreg
+Compiling module xil_defaultlib.MEM_WB_State_Reg
+Compiling module xil_defaultlib.mux3
+Compiling module xil_defaultlib.forwarding_logic
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.SoC_mux4
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.fact_reg(w=4)
+Compiling module xil_defaultlib.fact_reg(w=1)
+Compiling module xil_defaultlib.fact_reg
+Compiling module xil_defaultlib.CMP_ERROR
+Compiling module xil_defaultlib.CMP_GT
+Compiling module xil_defaultlib.CNT
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.REG
+Compiling module xil_defaultlib.DP
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.Factorial
+Compiling module xil_defaultlib.fact_and
+Compiling module xil_defaultlib.fact_mux4
+Compiling module xil_defaultlib.fact_done_stat_reg
+Compiling module xil_defaultlib.fact_err_stat_reg
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_reg
+Compiling module xil_defaultlib.gpio_mux4
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.Pipelined_SoC
+Compiling module xil_defaultlib.tb_Pipelined_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Pipelined_SoC_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Sidarth -notrace
+couldn't read file "C:/Users/Sidarth": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec  3 04:29:04 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 827.148 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Pipelined_SoC_behav -key {Behavioral:sim_1:Functional:tb_Pipelined_SoC} -tclbatch {tb_Pipelined_SoC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_Pipelined_SoC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 827.148 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Pipelined_SoC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 827.148 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Pipelined_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Pipelined_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_ERROR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_GT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DE_EX_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FE_DE_Stage_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_done_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_err_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/forwarding_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forwarding_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module we_dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Pipelined_SoC
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 941.316 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 941.316 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b200007855ac49cca7e9b1a2a6aad211 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Pipelined_SoC_behav xil_defaultlib.tb_Pipelined_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.FE_DE_Stage_Reg
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.DE_EX_State_Reg
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.EX_MEM_State_Reg
+Compiling module xil_defaultlib.we_dreg
+Compiling module xil_defaultlib.MEM_WB_State_Reg
+Compiling module xil_defaultlib.mux3
+Compiling module xil_defaultlib.forwarding_logic
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.SoC_mux4
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.fact_reg(w=4)
+Compiling module xil_defaultlib.fact_reg(w=1)
+Compiling module xil_defaultlib.fact_reg
+Compiling module xil_defaultlib.CMP_ERROR
+Compiling module xil_defaultlib.CMP_GT
+Compiling module xil_defaultlib.CNT
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.REG
+Compiling module xil_defaultlib.DP
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.Factorial
+Compiling module xil_defaultlib.fact_and
+Compiling module xil_defaultlib.fact_mux4
+Compiling module xil_defaultlib.fact_done_stat_reg
+Compiling module xil_defaultlib.fact_err_stat_reg
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_reg
+Compiling module xil_defaultlib.gpio_mux4
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.Pipelined_SoC
+Compiling module xil_defaultlib.tb_Pipelined_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Pipelined_SoC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 941.316 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-2L
+Top: fpga_Pipelined_SoC
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 997.395 ; gain = 56.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga_Pipelined_SoC' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/button_debouncer.v:1]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (2#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Pipelined_SoC' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (3#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (4#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FE_DE_Stage_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FE_DE_Stage_Reg' (6#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (7#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (8#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (9#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:1]
+WARNING: [Synth 8-5788] Register rf_reg[0] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[1] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[2] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[3] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[4] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[5] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[6] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[7] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[8] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[9] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[10] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[11] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[12] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[13] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[14] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[15] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[16] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[17] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[18] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[19] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[20] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[21] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[22] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[23] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[24] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[25] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[26] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[27] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[28] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[29] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[30] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[31] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (10#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (10#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (11#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DE_EX_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DE_EX_State_Reg' (12#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (13#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult' (14#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (15#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM_State_Reg' (16#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'we_dreg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v:22]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'we_dreg' (17#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_State_Reg' (18#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/mux3.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (19#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/mux3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'forwarding_logic' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/forwarding_logic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'forwarding_logic' (20#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/forwarding_logic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (21#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile.dat' is read successfully [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (22#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:1]
+WARNING: [Synth 8-5788] Register ram_reg[0] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[1] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[2] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[3] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[4] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[5] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[6] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[7] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[8] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[9] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[10] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[11] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[12] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[13] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[14] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[15] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[16] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[17] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[18] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[19] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[20] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[21] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[22] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[23] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[24] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[25] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[26] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[27] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[28] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[29] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[30] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[31] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[32] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[33] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[34] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[35] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[36] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[37] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[38] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[39] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[40] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[41] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[42] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[43] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[44] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[45] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[46] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[47] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[48] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[49] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[50] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[51] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[52] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[53] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[54] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[55] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[56] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[57] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[58] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[59] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[60] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[61] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[62] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[63] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (23#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SoC_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_ad' (24#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SoC_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_mux4' (25#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (26#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+	Parameter w bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (27#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+	Parameter w bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (27#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized1' (27#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Factorial' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DP' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v:22]
+INFO: [Synth 8-6157] synthesizing module 'CMP_ERROR' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CMP_ERROR' (28#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CMP_GT' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CMP_GT' (29#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (30#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUL' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUL' (31#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (32#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'REG' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'REG' (33#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DP' (34#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v:22]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (35#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Factorial' (36#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_and' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fact_and' (37#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mux4' (38#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_done_stat_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_done_stat_reg' (39#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_err_stat_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_err_stat_reg' (40#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_top' (41#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ad' (42#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gpio_reg' (43#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_mux4' (44#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (45#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipelined_SoC' (46#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (46#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (47#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (48#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/led_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_Pipelined_SoC' (49#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1070.672 ; gain = 129.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[4] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[3] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[2] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[1] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[0] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1070.672 ; gain = 129.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1070.672 ; gain = 129.355
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/constrs_1/new/fpga_Pipelined_SoC.xdc]
+Finished Parsing XDC File [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO_with_Data_Forwarding/Pipelined_CPU_Factorial_GPIO.srcs/constrs_1/new/fpga_Pipelined_SoC.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1426.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1485.633 ; gain = 544.316
+119 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 1485.633 ; gain = 544.316
+close_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

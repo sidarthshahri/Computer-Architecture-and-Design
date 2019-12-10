@@ -1,0 +1,53 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CMP_ERROR.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CMP_GT.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CNT.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CU.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/DP.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/Factorial.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/MUL.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/MUX.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/REG.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/Single_Cycle_SoC.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/SoC_ad.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/SoC_mux4.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/adder.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/alu.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/auxdec.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/button_debouncer.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/clk_gen.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/controlunit.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/datapath.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/dreg.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_ad.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_and.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_done_stat_reg.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_err_stat_reg.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_mux4.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_top.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fpga_Single_Cycle_SoC.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/hex_to_7seg.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/imem.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/led_mux.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/maindec.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/mult.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/shifter.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/signext.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/we_dreg.v" \
+"../../../../Single_Cycle_with_Factorial_GPIO.srcs/sim_1/new/tb_fpga_Single_Cycle_SoC.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

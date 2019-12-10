@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Sep 10 00:09:13 2019
+# Process ID: 2160
+# Current directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.runs/synth_1
+# Command line: vivado.exe -log Factorial_FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Factorial_FPGA.tcl
+# Log file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.runs/synth_1/Factorial_FPGA.vds
+# Journal file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Factorial_FPGA.tcl -notrace

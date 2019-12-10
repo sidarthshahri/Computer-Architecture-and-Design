@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_fpga_Single_Cycle_SoC_behav/xsimk.exe -simmode gui -wdb tb_fpga_Single_Cycle_SoC_behav.wdb -simrunnum 0 -socket 64029
+Design successfully loaded
+Design Loading Memory Usage: 5324 KB (Peak: 5324 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 6256 KB (Peak: 6256 KB)
+Simulation CPU Usage: 46 ms

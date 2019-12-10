@@ -1,0 +1,2094 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 6828
+License: Customer
+
+Current time: 	Thu Nov 21 14:37:41 GMT-08:00 2019
+Time zone: 	GMT-08:00 (GMT-08:00)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 3
+
+Screen size: 2880x1800
+Screen resolution (DPI): 192
+Available screens: 1
+Available disk space: 193 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=24
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Sidarth Shahri
+User home directory: C:/Users/Sidarth Shahri
+User working directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Sidarth Shahri/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Sidarth Shahri/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Sidarth Shahri/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/vivado.log
+Vivado journal file location: 	C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/vivado.jou
+Engine tmp dir: 	C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/.Xil/Vivado-6828-DESKTOP-U1OB0E7
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 544 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1274 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 8\Single_Cycle_with_Factorial_GPIO\Single_Cycle_with_Factorial_GPIO.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 560 MB. GUI used memory: 62 MB. Current time: 11/21/19, 2:37:43 PM GMT-08:00
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 110 MB (+113189kb) [00:00:25]
+// [Engine Memory]: 589 MB (+466459kb) [00:00:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  6322 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 620.816 ; gain = 55.926 
+// Project name: Single_Cycle_with_Factorial_GPIO; location: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO; part: xc7a35tcpg236-2L
+// [Engine Memory]: 636 MB (+18552kb) [00:00:31]
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 116 MB (+123kb) [00:00:33]
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 416ms to process. Increasing delay to 3000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 643 MB. GUI used memory: 66 MB. Current time: 11/21/19, 2:37:58 PM GMT-08:00
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-2L Top: fact_top 
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 66 MB. Current time: 11/21/19, 2:38:13 PM GMT-08:00
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 66 MB. Current time: 11/21/19, 2:38:28 PM GMT-08:00
+// [Engine Memory]: 1,042 MB (+391960kb) [00:01:06]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,103 MB (+9396kb) [00:01:09]
+// Xgd.load filename: C:/Xilinx/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 2.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.7s
+// [GUI Memory]: 135 MB (+14201kb) [00:01:11]
+// Schematic: addNotify
+// [Engine Memory]: 1,160 MB (+1880kb) [00:01:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  5846 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 769.063 ; gain = 91.082 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter w bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (2#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23] INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23] 
+// Tcl Message: 	Parameter w bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (2#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23] INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23] 
+// Tcl Message: 	Parameter w bound to: 32 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 830.727 ; gain = 152.746 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 830.727 ; gain = 152.746 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 830.727 ; gain = 152.746 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-2L INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1121.207 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.078 ; gain = 487.098 
+// Tcl Message: 42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 1165.078 ; gain = 487.863 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// [GUI Memory]: 150 MB (+7852kb) [00:01:16]
+// Elapsed time: 29 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// Elapsed time: 691 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// bx (cp):  Close : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,162 MB. GUI used memory: 88 MB. Current time: 11/21/19, 2:50:11 PM GMT-08:00
+// Engine heap size: 1,162 MB. GUI used memory: 88 MB. Current time: 11/21/19, 2:50:11 PM GMT-08:00
+// WARNING: HEventQueue.dispatchEvent() is taking  1522 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1159 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1060 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  36166 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  28800538 ms.
+// Elapsed time: 335 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v)]", 1); // B (D, cp)
+// Elapsed time: 122 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ac (cp)
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.xpr"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Opening Vivado Project: C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (C, I)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project {C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle' 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  6860 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1315 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1166.691 ; gain = 0.000 
+// Project name: CMPE140_SoC_single_cycle; location: C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle; part: xc7a100tcsg324-1
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 687ms to process. Increasing delay to 3000 ms.
+// Elapsed time: 14 seconds
+dismissDialog("Open Project"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1524 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1339 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1403 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1166 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 631ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 213 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v)]", 4); // B (D, cp)
+// PAPropertyPanels.initPanels (gpio_top.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpO2_reg : gpio_reg (gpio_reg.v)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 118 seconds
+selectCodeEditor("gpio_top.v", 201, 228); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("gpio_top.v", 1011, 300); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpio_ad : gpio_ad (gpio_ad.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpio_ad : gpio_ad (gpio_ad.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpio_ad : gpio_ad (gpio_ad.v)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+typeControlKey((HResource) null, "gpio_ad.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_ad.v", 'c'); // cl (w, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "gpio_ad.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 14 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "gpio_mux4.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 24 seconds
+dismissDialog("Add Sources"); // c (cp)
+// bx (cp):  Add Sources  : addNotify
+// Tcl Message: current_project Single_Cycle_with_Factorial_GPIO 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v}} 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v}} 
+// I (cp): Define Modules: addNotify
+dismissDialog("Add Sources"); // bx (cp)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "gpio_mux4.v", 1); // L (Q, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Modules"); // I (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v)]", 1); // B (D, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "gpio_reg.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v} w ] 
+// bx (cp):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v}} 
+// I (cp): Define Module: addNotify
+dismissDialog("Add Sources"); // bx (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpio_ad (gpio_ad.v)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpio_ad (gpio_ad.v)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpio_mux4 (gpio_mux4.v)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpio_mux4 (gpio_mux4.v)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpio_reg (gpio_reg.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpio_reg (gpio_reg.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1174 ms.
+// Elapsed time: 262 seconds
+selectCodeEditor("gpio_reg.v", 349, 535); // cl (w, cp)
+// Elapsed time: 63 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+selectCodeEditor("gpio_ad.v", 279, 575); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_ad.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 5, 243, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("gpio_ad.v", 153, 329); // cl (w, cp)
+// Elapsed time: 23 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 17 seconds
+selectCodeEditor("gpio_ad.v", 533, 185, true, false, false, false, false); // cl (w, cp) - Shift Key
+// Elapsed time: 14 seconds
+selectCodeEditor("gpio_ad.v", 219, 217); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 389, 225); // cl (w, cp)
+typeControlKey(null, null, 'z');
+// Elapsed time: 12 seconds
+selectCodeEditor("gpio_ad.v", 371, 167); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 279, 149); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 235, 209); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 129, 291); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 391, 471); // cl (w, cp)
+// Elapsed time: 142 seconds
+selectCodeEditor("gpio_ad.v", 343, 161); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 415, 151); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 415, 151, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("gpio_ad.v", 581, 463); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("gpio_ad.v", 445, 437); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 293, 339); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 227, 319); // cl (w, cp)
+// Elapsed time: 136 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpO2_reg : gpio_reg (gpio_reg.v)]", 13, false); // B (D, cp)
+// Tcl Message: current_project CMPE140_SoC_single_cycle 
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: fpga_top 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,209 MB. GUI used memory: 86 MB. Current time: 11/21/19, 3:18:01 PM GMT-08:00
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,226 MB. GUI used memory: 87 MB. Current time: 11/21/19, 3:18:01 PM GMT-08:00
+// [Engine Memory]: 1,227 MB (+8756kb) [00:40:40]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,306 MB (+18641kb) [00:40:41]
+// Schematic: addNotify
+// [GUI Memory]: 166 MB (+9735kb) [00:40:43]
+// WARNING: HEventQueue.dispatchEvent() is taking  3391 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1170.930 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter depth bound to: 16 - type: integer  	Parameter history_max bound to: 65535 - type: integer  
+// Tcl Message:  Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons : 	1: Unable to determine number of words or word size in RAM.  	2: No valid read/write found for RAM.  RAM dissolved into registers 
+// Tcl Message: 	Parameter WIDTH bound to: 32 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'mux2' (6#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.srcs/sources_1/new/mux2.v:1] INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.srcs/sources_1/new/mux2.v:1] 
+// Tcl Message: 	Parameter WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ENdreg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.srcs/sources_1/new/ENdreg.v:3] 
+// Tcl Message: 	Parameter WIDTH bound to: 32 - type: integer  
+// Tcl Message: 	Parameter w bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (20#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.srcs/sources_1/new/fact_reg.v:4] INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.srcs/sources_1/new/fact_reg.v:4] 
+// Tcl Message: 	Parameter w bound to: 1 - type: integer  
+// Tcl Message: 	Parameter w bound to: 1 - type: integer  
+// Tcl Message: 	Parameter w bound to: 32 - type: integer  
+// Tcl Message: 	Parameter w bound to: 32 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1189.281 ; gain = 18.352 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1189.281 ; gain = 18.352 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1189.281 ; gain = 18.352 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.srcs/constrs_1/new/fpga_top.xdc] Finished Parsing XDC File [C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.srcs/constrs_1/new/fpga_top.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1340.895 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1340.895 ; gain = 169.965 
+// Tcl Message: 103 Infos, 72 Warnings, 1 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1340.895 ; gain = 169.965 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// S (cp): Critical Messages: addNotify
+// Elapsed time: 16 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+// [Engine Memory]: 1,407 MB (+37970kb) [00:40:57]
+// PAPropertyPanels.initPanels (<const0>) elapsed time: 0.4s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,430 MB. GUI used memory: 114 MB. Current time: 11/21/19, 3:18:21 PM GMT-08:00
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 113 MB. Current time: 11/21/19, 3:18:41 PM GMT-08:00
+// Elapsed time: 34 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Elapsed time: 108 seconds
+selectCodeEditor("gpio_ad.v", 807, 223); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("gpio_ad.v", 265, 273); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 271, 301); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 61, 35); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 57, 137); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 51, 121); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 273, 149); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("gpio_ad.v", 275, 335); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 239, 291); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 239, 291, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_ad.v", 275, 325); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 275, 325, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_ad.v", 251, 279); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 285, 373); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 305, 357); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 223, 377); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("gpio_ad.v", 287, 103); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("gpio_ad.v", 177, 489); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 275, 593); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("gpio_ad.v", 365, 273); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 775, 329); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 669, 349); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 437, 443); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("gpio_ad.v", 315, 133); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 293, 119); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 277, 213); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("gpio_ad.v", 343, 501); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("gpio_ad.v", 445, 209); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 179, 559); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 199, 571); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 85, 117, true, false, false, false, false); // cl (w, cp) - Shift Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project Single_Cycle_with_Factorial_GPIO 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_mux4.v", 2); // k (j, cp)
+// Elapsed time: 39 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// bx (cp):  Close : addNotify
+// Tcl Message: current_project CMPE140_SoC_single_cycle 
+// TclEventType: DESIGN_CLOSE
+// Engine heap size: 1,453 MB. GUI used memory: 90 MB. Current time: 11/21/19, 3:25:34 PM GMT-08:00
+// WARNING: HEventQueue.dispatchEvent() is taking  1860 ms.
+// TclEventType: CURR_DESIGN_SET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 90 MB. Current time: 11/21/19, 3:25:34 PM GMT-08:00
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpio_MUX4 : gpio_MUX4 (gpio_MUX4.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpio_MUX4 : gpio_MUX4 (gpio_MUX4.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("gpio_MUX4.v", 496, 362); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_MUX4.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_MUX4.v", 'c'); // cl (w, cp)
+selectCodeEditor("gpio_MUX4.v", 390, 268); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 265, 685); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 325, 733); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_mux4.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 5, 117, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("gpio_mux4.v", 171, 255); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 213, 281); // cl (w, cp)
+// Elapsed time: 23 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 27 seconds
+selectCodeEditor("gpio_mux4.v", 525, 383); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 525, 383); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 541, 429); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 519, 407); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 251, 471); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 245, 455); // cl (w, cp)
+// Elapsed time: 51 seconds
+selectCodeEditor("gpio_mux4.v", 495, 361); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 573, 465); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("gpio_mux4.v", 203, 437); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 299, 297); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 241, 291); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("gpio_mux4.v", 241, 377); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_mux4.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_mux4.v", 2); // k (j, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("gpio_mux4.v", 241, 383); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("gpio_mux4.v", 501, 313); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 311, 157); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 329, 203); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 319, 183); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("gpio_mux4.v", 387, 319); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("gpio_mux4.v", 403, 317); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 375, 383); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 475, 385); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 953, 227); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 517, 591); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 359, 695); // cl (w, cp)
+selectCodeEditor("gpio_mux4.v", 11, 77, true, false, false, false, false); // cl (w, cp) - Shift Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+// Tcl Message: current_project Single_Cycle_with_Factorial_GPIO 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpO1_reg : gpio_reg (gpio_reg.v)]", 12, false); // B (D, cp)
+// Tcl Message: current_project CMPE140_SoC_single_cycle 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpO1_reg : gpio_reg (gpio_reg.v)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("gpio_reg.v", 270, 456); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 198, 560); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_reg.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_reg.v", 'c'); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 292, 484); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 149, 681); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_reg.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 3, 149, true, false, false, false, false); // cl (w, cp) - Shift Key
+// Elapsed time: 10 seconds
+selectCodeEditor("gpio_reg.v", 73, 403); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 237, 491); // cl (w, cp)
+// Elapsed time: 40 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 36 seconds
+selectCodeEditor("gpio_reg.v", 523, 73); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 3, 85, true, false, false, false, false); // cl (w, cp) - Shift Key
+// Elapsed time: 29 seconds
+selectCodeEditor("gpio_reg.v", 307, 199); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 259, 191); // cl (w, cp)
+// Elapsed time: 93 seconds
+selectCodeEditor("gpio_reg.v", 169, 297); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 169, 297, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_reg.v", 131, 285); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 623, 259); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 599, 243); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 443, 161); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 443, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_reg.v", 525, 205); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v), result_reg : fact_reg (fact_reg.v)]", 6, false); // B (D, cp)
+// Tcl Message: current_project Single_Cycle_with_Factorial_GPIO 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v), result_reg : fact_reg (fact_reg.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectCodeEditor("gpio_reg.v", 559, 111); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 675, 359); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 525, 143); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 577, 109); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 553, 413); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 523, 309); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("gpio_reg.v", 457, 163); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 461, 187); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 461, 187, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectCodeEditor("gpio_reg.v", 553, 409); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("gpio_reg.v", 191, 345); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 193, 279); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectCodeEditor("gpio_reg.v", 163, 243); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4, false, true); // k (j, cp) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4, false, true); // k (j, cp) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectCodeEditor("fact_reg.v", 143, 637); // cl (w, cp)
+selectCodeEditor("fact_reg.v", 209, 707); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("gpio_reg.v", 341, 679); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectCodeEditor("gpio_reg.v", 207, 201); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectCodeEditor("gpio_reg.v", 249, 213); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 389, 217); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 561, 339); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 251, 205); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 347, 307); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 369, 251); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 369, 251, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_reg.v", 359, 355); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 359, 355, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_reg.v", 815, 343); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectCodeEditor("gpio_reg.v", 769, 219); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "gpio_top.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (cp)
+// bx (cp):  Add Sources  : addNotify
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v}} 
+// I (cp): Define Module: addNotify
+dismissDialog("Add Sources"); // bx (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("gpio_reg.v", 877, 17); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpio_top (gpio_top.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpio_top (gpio_top.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("gpio_top.v", 155, 583); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 203, 619); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("gpio_top.v", 533, 607); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 535, 645); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 425, 677); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("gpio_top.v", 519, 689, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectCodeEditor("gpio_reg.v", 447, 275); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("gpio_reg.v", 429, 255); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 469, 249); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 461, 353); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 337, 241); // cl (w, cp)
+selectCodeEditor("gpio_reg.v", 481, 343); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+selectCodeEditor("gpio_top.v", 447, 605); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("gpio_top.v", 673, 567); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 681, 617); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 55 seconds
+selectCodeEditor("gpio_top.v", 213, 679); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 173, 621); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 213, 649); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("gpio_top.v", 719, 399); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 427, 403); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 319, 435); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 97, 223, true, false, false, false, false); // cl (w, cp) - Shift Key
+selectCodeEditor("gpio_top.v", 137, 635); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("gpio_top.v", 199, 287); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+selectCodeEditor("gpio_ad.v", 105, 373); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_ad.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+selectCodeEditor("gpio_top.v", 333, 301); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 133, 265); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("gpio_top.v", 317, 519); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 591, 581); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 311, 511); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 319, 531); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 3); // k (j, cp)
+selectCodeEditor("gpio_reg.v", 547, 335); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_reg.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+selectCodeEditor("gpio_top.v", 307, 585); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 179, 541); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("gpio_top.v", 285, 411); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 241, 327); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 135, 405); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'c'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 241, 643); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 91, 579); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 123, 581); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 277, 509); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 385, 481); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 509, 437); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 361, 433); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 349, 605); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_mux4.v", 2); // k (j, cp)
+selectCodeEditor("gpio_mux4.v", 147, 361); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_mux4.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+selectCodeEditor("gpio_top.v", 415, 569); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 405, 619); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 445, 649); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 201, 307); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("gpio_top.v", 167, 339); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 223, 357); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 245, 371); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("gpio_top.v", 373, 629); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 275, 717); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("gpio_top.v", 137, 539); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 165, 565); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 177, 607); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("gpio_top.v", 267, 469); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 227, 455); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("gpio_top.v", 183, 687); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 181, 717); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 319, 331); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 309, 317); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 167, 309); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 253, 345); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 251, 327); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 431, 351); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 207, 573); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 411, 419); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 253, 209); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 253, 477); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 213, 575); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 377, 529); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 479, 115); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 479, 115, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "gpio_top.v", 'c'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 195, 449); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 193, 477); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+// Elapsed time: 163 seconds
+selectCodeEditor("gpio_top.v", 185, 517); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_top (fpga_top.v), system : system (system.v), gpio_top : gpio_top (gpio_top.v), gpO1_reg : gpio_reg (gpio_reg.v)]", 12, false); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 27); // B (D, cp)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 28); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 27, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_factorial (tb_factorial.v)]", 32, true); // B (D, cp) - Node
+// Tcl Message: current_project CMPE140_SoC_single_cycle 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_gpio_top (tb_gpio_top.v)]", 33, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_gpio_top (tb_gpio_top.v)]", 33, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("tb_gpio_top.v", 120, 774); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 120, 774); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 324, 432); // cl (w, cp)
+// Elapsed time: 65 seconds
+selectCodeEditor("tb_gpio_top.v", 640, 472); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 189, 505); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 201, 509); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project Single_Cycle_with_Factorial_GPIO 
+// Elapsed time: 35 seconds
+selectCodeEditor("gpio_top.v", 199, 57); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 199, 57, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_top.v", 227, 71); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 227, 71, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_top.v", 223, 343); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 223, 343, false, false, false, false, true); // cl (w, cp) - Double Click
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ac (cp)
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/A8_Week3/A8_Week3.xpr"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/A8_Week3/A8_Week3.xpr. Version: Vivado v2018.3 
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (C, I)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project {C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/A8_Week3/A8_Week3.xpr} 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'Z:/Downloads/drive-download-20191114T231029Z-001/A8_Week3' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  3333 ms.
+// Project name: A8_Week3; location: C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/A8_Week3; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1543.859 ; gain = 0.000 
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_top_tb (fpga_top_tb.v)]", 8); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_top_tb (fpga_top_tb.v)]", 8); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fact_reg (fact_reg.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pipelined_multiplier (pipelined_multiplier.v)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pipelined_multiplier (pipelined_multiplier.v)]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_top_tb (fpga_top_tb.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_top_tb (fpga_top_tb.v)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_top_tb (fpga_top_tb.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fpga_top_tb (fpga_top_tb.v)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8618 ms. Increasing delay to 25854 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5156 ms. Increasing delay to 15468 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4079 ms. Increasing delay to 12237 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3116 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  28800568 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1897 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 51 ms. Decreasing delay to 2051 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 91 ms. Decreasing delay to 2091 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 35 ms. Decreasing delay to 2035 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 102 MB. Current time: 11/21/19, 3:55:37 PM GMT-08:00
+// Elapsed time: 28953 seconds
+selectCodeEditor("tb_gpio_top.v", 252, 308); // cl (w, cp)
+typeControlKey((HResource) null, "tb_gpio_top.v", 'c'); // cl (w, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1113 ms. Increasing delay to 3339 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2573 ms. Increasing delay to 7719 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1366 ms. Increasing delay to 4098 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4877 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7907 ms. Increasing delay to 5000 ms.
+// Elapsed time: 91 seconds
+selectCodeEditor("tb_gpio_top.v", 614, 288); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 369, 473); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 363, 271); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 203, 91); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 18 seconds
+selectCodeEditor("gpio_top.v", 149, 305); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 151, 577); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 227, 527); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("gpio_top.v", 179, 247); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 181, 613); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 181, 383); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 183, 645); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 271, 487); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 147, 447); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 515, 531); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("gpio_top.v", 407, 589); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 625, 579); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 509, 499); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("gpio_top.v", 587, 583); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("gpio_top.v", 147, 445); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 157, 507); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 157, 507, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_top.v", 155, 509); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 167, 603); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_mux4.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+selectCodeEditor("gpio_top.v", 151, 599); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 157, 611); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 167, 507); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 167, 507, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "gpio_top.v", 'c'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 191, 511); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 159, 547); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 159, 547, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "gpio_top.v", 'c'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 197, 545); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project Single_Cycle_with_Factorial_GPIO 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-2L Top: fact_top 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 100 MB. Current time: 11/21/19, 4:00:52 PM GMT-08:00
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.2s
+// [GUI Memory]: 176 MB (+1114kb) [01:23:33]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4067 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1543.859 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter w bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (2#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23] INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23] 
+// Tcl Message: 	Parameter w bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (2#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23] INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23] 
+// Tcl Message: 	Parameter w bound to: 32 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1543.859 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1543.859 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1543.859 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-2L INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1543.859 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1556.199 ; gain = 12.340 
+// Tcl Message: 42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1556.199 ; gain = 12.340 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 15 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpio_top (gpio_top.v)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bx (cp):  Set as Top : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top gpio_top [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // bx (cp)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, I)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton("OptionPane.button", "OK"); // JButton (C, I)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, I)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1976.449 ; gain = 11.645 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v:23] INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:23] INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:31] 
+// Tcl Message: ERROR: [Synth 8-27] procedural assign not supported [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:58] ERROR: [Synth 8-6156] failed synthesizing module 'gpio_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:23] ERROR: [Synth 8-6156] failed synthesizing module 'gpio_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1988.277 ; gain = 23.473 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.  
+// S (cp): Critical Messages: addNotify
+dismissDialog("Reloading"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// bx (cp):  Close : addNotify
+// TclEventType: DESIGN_CLOSE
+// Engine heap size: 1,453 MB. GUI used memory: 104 MB. Current time: 11/21/19, 4:01:40 PM GMT-08:00
+// WARNING: HEventQueue.dispatchEvent() is taking  2805 ms.
+// TclEventType: CURR_DESIGN_SET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 104 MB. Current time: 11/21/19, 4:01:40 PM GMT-08:00
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 389, 82); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 389, 82, false, false, false, false, true); // dr (af, cp) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+selectCodeEditor("gpio_ad.v", 205, 627); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 317, 633); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 2); // k (j, cp)
+selectCodeEditor("gpio_ad.v", 260, 738); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 253, 405); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 253, 405, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_ad.v", 351, 413); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 539, 407); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("gpio_ad.v", 229, 123); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 607, 629); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-2L Top: gpio_top 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: ERROR: [Synth 8-2576] procedural assignment to a non-register RdSel is not permitted [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:58] 
+// Tcl Message: INFO: [Synth 8-2350] module gpio_ad ignored due to previous errors [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:23] 
+// Tcl Message: Failed to read verilog 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v' 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// S (cp): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+selectCodeEditor("gpio_ad.v", 239, 643); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 451, 599); // cl (w, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 707, 124); // dr (af, cp)
+selectCodeEditor("gpio_ad.v", 353, 173); // cl (w, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v)]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v), fact_ad : fact_ad (fact_ad.v)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v), fact_ad : fact_ad (fact_ad.v)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+selectCodeEditor("gpio_ad.v", 265, 625); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 347, 611); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("gpio_ad.v", 213, 651); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-2L Top: gpio_top 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: ERROR: [Synth 8-2576] procedural assignment to a non-register RdSel is not permitted [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:58] 
+// Tcl Message: INFO: [Synth 8-2350] module gpio_ad ignored due to previous errors [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:23] 
+// Tcl Message: Failed to read verilog 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v' 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// S (cp): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+// Elapsed time: 12 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 799, 66); // dr (af, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("gpio_ad.v", 241, 125); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 241, 125, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_ad.v", 7); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_ad.v", 7); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+selectCodeEditor("gpio_ad.v", 367, 631); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("gpio_ad.v", 301, 617); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_ad.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 225, 617); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 315, 661); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 259, 427); // cl (w, cp)
+selectCodeEditor("gpio_ad.v", 259, 427, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_ad.v", 625, 479); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-2L Top: gpio_top 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter w bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gpio_reg' (2#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v:23] 
+// Tcl Message: ERROR: [Synth 8-685] variable 'gpO1' should not be used in output port connection [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v:48] ERROR: [Synth 8-6156] failed synthesizing module 'gpio_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 6 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// S (cp): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 847, 90); // dr (af, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("gpio_top.v", 153, 107); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 187, 89); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_gpio_top (tb_gpio_top.v)]", 33, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_gpio_top (tb_gpio_top.v)]", 33, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("tb_gpio_top.v", 76, 298); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 50, 280, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("tb_gpio_top.v", 26, 268); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 24, 266, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeEditor_GOTO_DEFINITION, "Go to Definition"); // af (al, Popup.HeavyWeightWindow)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_reg.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_MUX4.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 1); // k (j, cp)
+selectCodeEditor("gpio_top.v", 1026, 856); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 1158, 762); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 215, 469); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 447, 381); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("gpio_top.v", 337, 413); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 873, 403); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("gpio_top.v", 545, 499); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 239, 399); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 299, 401); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 437, 509); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 313, 79); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 313, 79, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_top.v", 359, 465); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("gpio_top.v", 239, 243); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 239, 243, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("gpio_top.v", 273, 251); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 613, 249); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 635, 373); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 629, 333); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("gpio_top.v", 243, 283); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 243, 283, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_top.v", 325, 293); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 521, 493); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("gpio_top.v", 475, 333); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 273, 19); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 273, 19, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "gpio_top.v", 'c'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 185, 155); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 185, 155, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 183, 421); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 183, 421, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 203, 415); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 439, 509); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-2L Top: gpio_top 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter w bound to: 32 - type: integer  
+// Tcl Message: ERROR: [Synth 8-685] variable 'RD' should not be used in output port connection [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v:70] ERROR: [Synth 8-6156] failed synthesizing module 'gpio_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 9 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// S (cp): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+// Elapsed time: 10 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 655, 194); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 655, 194, false, false, false, false, true); // dr (af, cp) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 619, 186); // dr (af, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("gpio_top.v", 139, 667); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fact_top (fact_top.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fact_ad.v", 7); // k (j, cp)
+// Elapsed time: 61 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+selectCodeEditor("gpio_top.v", 239, 471); // cl (w, cp)
+selectCodeEditor("gpio_top.v", 239, 471, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("gpio_top.v", 343, 481); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 637ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1026 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-2L Top: gpio_top 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 110 MB. Current time: 11/21/19, 4:12:35 PM GMT-08:00
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 186 MB (+1804kb) [01:35:17]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4238 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter w bound to: 32 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Tcl Message: 13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2001.813 ; gain = 0.000 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// Elapsed time: 13 seconds
+floatView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic (2)"); // ax (aI, cp)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: float view
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// bx (cp):  Close : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 122 MB. Current time: 11/21/19, 4:13:06 PM GMT-08:00
+// Engine heap size: 1,453 MB. GUI used memory: 122 MB. Current time: 11/21/19, 4:13:06 PM GMT-08:00
+// WARNING: HEventQueue.dispatchEvent() is taking  3353 ms.
+// TclEventType: CURR_DESIGN_SET
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic (2)"); // ax (aI, aK)
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-2L Top: gpio_top 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 127 MB. Current time: 11/21/19, 4:13:16 PM GMT-08:00
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4227 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter w bound to: 32 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Tcl Message: 13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (aF, cp)
+// PAPropertyPanels.initPanels (nolabel_line64 (gpio_mux4)) elapsed time: 0.3s
+// [GUI Memory]: 196 MB (+164kb) [01:37:01]
+// Elapsed time: 159 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ac (cp)
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 1/Assignment_1.xpr"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Opening Vivado Project: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 1/Assignment_1.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (C, I)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 1/Assignment_1.xpr} 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  3538 ms.
+// Project name: Assignment_1; location: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 1; part: xc7a35tcpg236-2L
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 210 MB (+4127kb) [01:39:02]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Factorial_tb (Factorial_tb.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Factorial_tb (Factorial_tb.v)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("Factorial_tb.v", 171, 613); // cl (w, cp)
+selectCodeEditor("Factorial_tb.v", 335, 615); // cl (w, cp)
+selectCodeEditor("Factorial_tb.v", 587, 593); // cl (w, cp)
+// Elapsed time: 361 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// bx (cp):  Close : addNotify
+// Tcl Message: current_project Single_Cycle_with_Factorial_GPIO 
+// TclEventType: DESIGN_CLOSE
+// Engine heap size: 1,453 MB. GUI used memory: 127 MB. Current time: 11/21/19, 4:22:55 PM GMT-08:00
+// WARNING: HEventQueue.dispatchEvent() is taking  3158 ms.
+// TclEventType: CURR_DESIGN_SET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 127 MB. Current time: 11/21/19, 4:22:55 PM GMT-08:00
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (D, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "tb_gpio.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; tb_gpio.v ; xil_defaultlib ; <Local to Project>", 0, "xil_defaultlib", 3); // bQ (Q, c)
+editTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "xil_defaultlib", 0, "Library", 3); // bQ (Q, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; tb_gpio.v ; xil_defaultlib ; <Local to Project>", 0, "tb_gpio.v", 2); // bQ (Q, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; tb_gpio.v ; xil_defaultlib ; <Local to Project>", 0, "tb_gpio.v", 2, false, false, false, true, false); // bQ (Q, c) - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; tb_gpio.v ; xil_defaultlib ; <Local to Project>", 0, "tb_gpio.v", 2, false, false, false, true, false); // bQ (Q, c) - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; tb_gpio.v ; xil_defaultlib ; <Local to Project>", 0, "tb_gpio.v", 2); // bQ (Q, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; tb_gpio.v ; xil_defaultlib ; <Local to Project>", 0, "tb_gpio.v", 2); // bQ (Q, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; tb_gpio.v ; xil_defaultlib ; <Local to Project>", 0, "tb_gpio.v", 2, false, false, false, false, true); // bQ (Q, c) - Double Click
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "tb_gpio_top.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 31 seconds
+dismissDialog("Add Sources"); // c (cp)
+// bx (cp):  Add Simulation Sources  : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sim_1/new/tb_gpio_top.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sim_1/new/tb_gpio_top.v}} 
+// I (cp): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // bx (cp)
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Elapsed time: 15 seconds
+selectCodeEditor("gpio_top.v", 383, 569); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fact_top (tb_fact_top.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fact_top (tb_fact_top.v)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_gpio_top (tb_gpio_top.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_gpio_top (tb_gpio_top.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_gpio_top.v", 557, 603); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 225, 685); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 51, 613); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 157, 661); // cl (w, cp)
+typeControlKey((HResource) null, "tb_gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 127, 283); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 137, 281); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 209, 377); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 295, 363); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 377, 405); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 313, 337); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 299, 301); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 575, 527); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 167, 485); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 147, 417); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 253, 337); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 379, 595); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 199, 455); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 303, 247); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_gpio_top.v", 323, 299); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 233, 249); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 333, 365); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 265, 351); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 335, 347); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 129, 375); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 105, 283); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 105, 283, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("tb_gpio_top.v", 303, 557); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_gpio_top.v", 169, 535); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 31, 541); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 189, 545); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 309, 437); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 295, 359); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectCodeEditor("tb_gpio_top.v", 155, 293); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 425, 215); // cl (w, cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8, false, true); // k (j, cp) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectCodeEditor("tb_fact_top.v", 193, 575); // cl (w, cp)
+selectCodeEditor("tb_fact_top.v", 153, 545); // cl (w, cp)
+selectCodeEditor("tb_fact_top.v", 189, 567); // cl (w, cp)
+selectCodeEditor("tb_fact_top.v", 1117, 255); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectCodeEditor("tb_gpio_top.v", 121, 289); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 277, 491); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 159, 511); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 69, 509); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 69, 509, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("tb_gpio_top.v", 83, 521); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 83, 521); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 105, 505); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 395, 457); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 909, 211); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 389, 231); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 375, 207); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 425, 85); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 441, 51); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 351, 115); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 85, 649); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 179, 595); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 159, 665); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 197, 635); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 131, 647); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 605, 381); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 109, 649); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectCodeEditor("tb_fact_top.v", 31, 393); // cl (w, cp)
+selectCodeEditor("tb_fact_top.v", 61, 385); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectCodeEditor("tb_gpio_top.v", 221, 647); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 261, 115); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 397, 369); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectCodeEditor("tb_gpio_top.v", 449, 553); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectCodeEditor("tb_fact_top.v", 95, 501); // cl (w, cp)
+selectCodeEditor("tb_fact_top.v", 95, 485); // cl (w, cp)
+selectCodeEditor("tb_fact_top.v", 247, 593); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectCodeEditor("tb_gpio_top.v", 469, 183); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("tb_gpio_top.v", 219, 411); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 215, 231); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 165, 311); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 149, 59); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 149, 59, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_FIND_TEXT_IN_CURRENT_FILE, "Find..."); // af (al, Popup.HeavyWeightWindow)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WE"); // l (aT, cp)
+selectCodeEditor("tb_gpio_top.v", 127, 219); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 143, 215); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 211, 183); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 169, 237); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 165, 275); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 141, 317); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 151, 343); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 151, 375); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 227, 289); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 115, 235); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_gpio_top.v", 109, 185); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 255, 189); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 109, 217); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 113, 247); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 115, 287); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 255, 239); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 261, 275); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("tb_gpio_top.v", 277, 291); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 281, 285); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 111, 319); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 111, 351); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 115, 381); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 405, 413); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 251, 383); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 283, 403); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 279, 443); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 537, 499); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 313, 79); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 313, 79, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "tb_gpio_top.v", 'c'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 173, 393); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 173, 393, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "tb_gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 173, 411); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 173, 411, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "tb_gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 289, 271); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectCodeEditor("tb_gpio_top.v", 397, 331); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_gpio_top.v", 253, 331); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 291, 327); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5, false, true); // k (j, cp) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_top.v", 5, false, true); // k (j, cp) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectCodeEditor("gpio_top.v", 105, 619); // cl (w, cp)
+typeControlKey((HResource) null, "gpio_top.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectCodeEditor("tb_gpio_top.v", 493, 391); // cl (w, cp)
+typeControlKey((HResource) null, "tb_gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 189, 315); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_gpio_top.v", 277, 359); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 185, 307); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 271, 387); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("tb_gpio_top.v", 127, 679); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 147, 515); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 171, 547); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 197, 581); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 193, 623); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_gpio_top.v", 165, 637); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 185, 677); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 185, 615); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 199, 647); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectCodeEditor("tb_gpio_top.v", 305, 203); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 305, 203, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("tb_gpio_top.v", 255, 189); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 255, 189, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "tb_gpio_top.v", 'c'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 201, 547); // cl (w, cp)
+typeControlKey((HResource) null, "tb_gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 265, 219); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 265, 219, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "tb_gpio_top.v", 'c'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 187, 587); // cl (w, cp)
+typeControlKey((HResource) null, "tb_gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 157, 621); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 169, 619); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 253, 237); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 253, 237, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "tb_gpio_top.v", 'c'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 163, 329); // cl (w, cp)
+typeControlKey((HResource) null, "tb_gpio_top.v", 'v'); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 197, 507); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 201, 577); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 183, 521); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 219, 433); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 221, 419); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 187, 455); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 177, 375); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 189, 513); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 451, 497); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 213, 295); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 323, 377); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 363, 511); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 353, 301); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_gpio_top.v", 259, 285); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+selectCodeEditor("tb_gpio_top.v", 337, 89); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 335, 131); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 8); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 9); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_gpio_top.v", 323, 403); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 373, 353); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 399, 319); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 383, 423); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_gpio_top.v", 285, 447); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 339, 359); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 305, 457); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 321, 551); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_gpio_top.v", 551, 175); // cl (w, cp)
+selectCodeEditor("tb_gpio_top.v", 551, 175, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("tb_gpio_top.v", 459, 351); // cl (w, cp)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aL, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fact_top (tb_fact_top.v)]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_gpio_top (tb_gpio_top.v)]", 7, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Set as Top : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top tb_gpio_top [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+dismissDialog("Set as Top"); // bx (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_gpio_top' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_gpio_top_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 7 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (C, I)
+// a (cp): Critical Messages: addNotify
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 809, 52); // dr (af, cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 803, 66); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 889, 120); // dr (af, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gpio_ad.v", 1); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("gpio_top.v", 193, 505); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 4); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_gpio_top' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_gpio_top_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim' 
+// Tcl Message: Built simulation snapshot tb_gpio_top_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:  ****** Webtalk v2018.3 (64-bit)   **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Users/Sidarth -notrace couldn't read file "C:/Users/Sidarth": no such file or directory INFO: [Common 17-206] Exiting Webtalk at Thu Nov 21 16:36:42 2019... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_gpio_top_behav -key {Behavioral:sim_1:Functional:tb_gpio_top} -tclbatch {tb_gpio_top.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1614 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source tb_gpio_top.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 141 MB. Current time: 11/21/19, 4:36:48 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_gpio_top_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 2047.508 ; gain = 0.000 
+// 'd' command handler elapsed time: 14 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 146 MB. Current time: 11/21/19, 4:36:51 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 146 MB. Current time: 11/21/19, 4:36:54 PM GMT-08:00
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 161 MB. Current time: 11/21/19, 4:36:56 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 146 MB. Current time: 11/21/19, 4:36:57 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 147 MB. Current time: 11/21/19, 4:36:58 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 147 MB. Current time: 11/21/19, 4:37:00 PM GMT-08:00
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 145 MB. Current time: 11/21/19, 4:37:02 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 165 MB. Current time: 11/21/19, 4:37:05 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 156 MB. Current time: 11/21/19, 4:37:07 PM GMT-08:00
+// Elapsed time: 13 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 297, -605); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 537, -834); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 145 MB. Current time: 11/21/19, 4:37:28 PM GMT-08:00
+selectMenu((HResource) null, "Waveform Style"); // ac (al, cp)
+selectMenu((HResource) null, "Signal Color"); // ac (al, cp)
+selectMenu((HResource) null, "Radix"); // ac (al, cp)
+selectMenu((HResource) null, "Radix"); // ac (al, cp)
+selectMenuItem((HResource) null, "Binary"); // T (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 145 MB. Current time: 11/21/19, 4:37:53 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 145 MB. Current time: 11/21/19, 4:37:57 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 178 MB. Current time: 11/21/19, 4:37:57 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 145 MB. Current time: 11/21/19, 4:37:58 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 28 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 2845, 62); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 3297, 132); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 145 MB. Current time: 11/21/19, 4:38:05 PM GMT-08:00
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1060, 56); // n (o, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 145 MB. Current time: 11/21/19, 4:38:23 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 145 MB. Current time: 11/21/19, 4:38:23 PM GMT-08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 124 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 17 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_gpio_top", "DesignTask.SIMULATION");
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// bx (cp):  Close : addNotify
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton (C, I)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1966 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fact_top.v", 3); // k (j, cp)
+dismissDialog("Close"); // bx (cp)
+selectCodeEditor("tb_fact_top.v", 835, 333); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_gpio_top.v", 4); // k (j, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("tb_gpio_top.v", 401, 281); // cl (w, cp)
+closeMainWindow("Single_Cycle_with_Factorial_GPIO - [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr] - Vivado 2018.3"); // cp
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bx (cp):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 128 MB. Current time: 11/21/19, 4:41:09 PM GMT-08:00
+// WARNING: HEventQueue.dispatchEvent() is taking  1359 ms.
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (cp)
+closeMainWindow("Assignment_1 - [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 1/Assignment_1.xpr] - Vivado 2018.3"); // cp
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bx (cp):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 117 MB. Current time: 11/21/19, 4:41:11 PM GMT-08:00
+// WARNING: HEventQueue.dispatchEvent() is taking  1199 ms.
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (cp)
+closeMainWindow("CMPE140_SoC_single_cycle - [C:/Users/Sidarth Shahri/Desktop/Previous Material/Mandy and Thinh/LAB8/Week 3 Code/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle/CMPE140_SoC_single_cycle.xpr] - Vivado 2018.3"); // cp
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bx (cp):  Close Project : addNotify
+// Tcl Message: current_project CMPE140_SoC_single_cycle 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 111 MB. Current time: 11/21/19, 4:41:13 PM GMT-08:00
+// WARNING: HEventQueue.dispatchEvent() is taking  1176 ms.
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5009 ms. Increasing delay to 15027 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 107 ms. Decreasing delay to 2107 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1945 ms. Increasing delay to 5835 ms.

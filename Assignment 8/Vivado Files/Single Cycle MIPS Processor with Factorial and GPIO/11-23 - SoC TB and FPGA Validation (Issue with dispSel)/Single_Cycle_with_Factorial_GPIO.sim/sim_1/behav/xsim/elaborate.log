@@ -1,0 +1,55 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2661d587794f42a09b11bbe9a1119f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Single_Cycle_SoC_behav xil_defaultlib.tb_Single_Cycle_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'ra3' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sim_1/new/tb_Single_Cycle_SoC.v:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.we_dreg
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.SoC_mux4
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.fact_reg(w=4)
+Compiling module xil_defaultlib.fact_reg(w=1)
+Compiling module xil_defaultlib.fact_reg
+Compiling module xil_defaultlib.CMP_ERROR
+Compiling module xil_defaultlib.CMP_GT
+Compiling module xil_defaultlib.CNT
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.REG
+Compiling module xil_defaultlib.DP
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.Factorial
+Compiling module xil_defaultlib.fact_and
+Compiling module xil_defaultlib.fact_mux4
+Compiling module xil_defaultlib.fact_done_stat_reg
+Compiling module xil_defaultlib.fact_err_stat_reg
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_reg
+Compiling module xil_defaultlib.gpio_mux4
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.Single_Cycle_SoC
+Compiling module xil_defaultlib.tb_Single_Cycle_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Single_Cycle_SoC_behav

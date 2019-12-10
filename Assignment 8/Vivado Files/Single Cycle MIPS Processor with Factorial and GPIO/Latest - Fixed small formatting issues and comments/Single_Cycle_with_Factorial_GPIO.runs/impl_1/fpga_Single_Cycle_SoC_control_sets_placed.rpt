@@ -1,0 +1,154 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Nov 24 06:28:59 2019
+| Host         : DESKTOP-U1OB0E7 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fpga_Single_Cycle_SoC_control_sets_placed.rpt
+| Design       : fpga_Single_Cycle_SoC
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    88 |
+| Unused register locations in slices containing registers |    92 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      8 |            1 |
+|    16+ |           86 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            3 |
+| No           | No                    | Yes                    |              74 |           25 |
+| No           | Yes                   | No                     |              33 |            9 |
+| Yes          | No                    | No                     |            1335 |          580 |
+| Yes          | No                    | Yes                    |             585 |          233 |
+| Yes          | Yes                   | No                     |             713 |          279 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                         Enable Signal                         |                               Set/Reset Signal                              | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_3[0]                 | rst_IBUF                                                                    |                1 |              4 |
+|  clk_5KHz_BUFG |                                                               |                                                                             |                3 |              8 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_4_3             |                                                                             |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[7][31]_i_4_0              |                                                                             |               22 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_2             | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][0]_i_3_2                            |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_11            |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_17            |                                                                             |                9 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_4_2             |                                                                             |                9 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[28][31]_i_4_0             | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][0]_i_3_4                            |               10 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_8_0             |                                                                             |               10 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_10            |                                                                             |               31 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_0             | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][0]_i_3_0                            |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_3             | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][0]_i_3_3                            |                8 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_8_1             |                                                                             |               14 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_4_0             | Single_Cycle_SoC/mips/dp/pc_reg/ram[48][0]_i_4_6                            |               10 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_5             | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][0]_i_3_6                            |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[28][31]_i_5_0             |                                                                             |               11 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_4             | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][0]_i_3_5                            |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_1             | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][0]_i_3_1                            |               11 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_12            |                                                                             |               11 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_14            |                                                                             |               11 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[19][31]_i_3_0             |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_13            |                                                                             |               11 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_15            |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_4_1             | Single_Cycle_SoC/mips/dp/pc_reg/ram[48][0]_i_4_7                            |               11 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[16][31]_i_7_16            |                                                                             |                6 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_11              |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_14              |                                                                             |               14 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_2               |                                                                             |               16 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_15              |                                                                             |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_6               |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_7               |                                                                             |               27 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_10              |                                                                             |               15 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_9               |                                                                             |               14 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_12              |                                                                             |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_0               |                                                                             |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_1               |                                                                             |               14 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_3               |                                                                             |               17 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_4               |                                                                             |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_13              |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_5               |                                                                             |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[0][0]_i_6_8               |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[10][31]_i_3_2             |                                                                             |               11 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[10][31]_i_3_1             | Single_Cycle_SoC/mips/dp/pc_reg/ram[48][0]_i_4_5                            |               14 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[10][31]_i_3_0             | Single_Cycle_SoC/mips/dp/pc_reg/ram[48][0]_i_4_1                            |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/factorial_accelerator/factorial/CU0/load_reg | Single_Cycle_SoC/factorial_accelerator/factorial/CU0/FSM_onehot_cs_reg[1]_8 |                9 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[36][31]_i_4_1             | Single_Cycle_SoC/mips/dp/pc_reg/ram[32][0]_i_3_1                            |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[3][31]_i_3_0              | Single_Cycle_SoC/mips/dp/pc_reg/ram[32][0]_i_3_2                            |               10 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[3][31]_i_3_1              | Single_Cycle_SoC/mips/dp/pc_reg/ram[32][0]_i_3_3                            |               16 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[36][31]_i_4_0             | Single_Cycle_SoC/mips/dp/pc_reg/ram[32][0]_i_3_0                            |               15 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[3][31]_i_3_2              |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[3][31]_i_3_4              |                                                                             |               10 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[3][31]_i_4_0              | Single_Cycle_SoC/mips/dp/pc_reg/ram[32][0]_i_3_6                            |               14 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[3][31]_i_4_1              | Single_Cycle_SoC/mips/dp/pc_reg/ram[48][0]_i_4_3                            |                9 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[3][31]_i_4_2              |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[3][31]_i_3_3              |                                                                             |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[36][31]_i_4_3             | Single_Cycle_SoC/mips/dp/pc_reg/ram[32][0]_i_3_5                            |               15 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[36][31]_i_4_4             |                                                                             |               14 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[36][31]_i_4_2             | Single_Cycle_SoC/mips/dp/pc_reg/ram[32][0]_i_3_4                            |               15 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[5][31]_i_3_0              | Single_Cycle_SoC/mips/dp/pc_reg/ram[48][0]_i_4_2                            |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[48][0]_i_3_0              |                                                                             |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[44][31]_i_4_0             |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[9][31]_i_4_0              |                                                                             |               23 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[9][31]_i_3_1              | Single_Cycle_SoC/mips/dp/pc_reg/ram[48][0]_i_4_4                            |               13 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[9][31]_i_4_1              |                                                                             |               15 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[9][31]_i_3_2              |                                                                             |               12 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/ram[9][31]_i_3_0              | Single_Cycle_SoC/mips/dp/pc_reg/ram[48][0]_i_4_0                            |               10 |             31 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/factorial_accelerator/factorial/CU0/Q[4]     | rst_IBUF                                                                    |                9 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/E[0]                          | rst_IBUF                                                                    |               17 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_4[0]                 | rst_IBUF                                                                    |                6 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_12[0]                | rst_IBUF                                                                    |               22 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_19[0]                | rst_IBUF                                                                    |               11 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_7[0]                 | rst_IBUF                                                                    |                7 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_10[0]                | rst_IBUF                                                                    |               13 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_16[0]                | rst_IBUF                                                                    |               13 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_6[0]                 | rst_IBUF                                                                    |               17 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_18[0]                | rst_IBUF                                                                    |               12 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_14[0]                | rst_IBUF                                                                    |               19 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_9[0]                 | rst_IBUF                                                                    |               11 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_11[0]                | rst_IBUF                                                                    |               10 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_17[0]                | rst_IBUF                                                                    |               12 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_13[0]                | rst_IBUF                                                                    |               13 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_15[0]                | rst_IBUF                                                                    |               10 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[3]_8[0]                 | rst_IBUF                                                                    |               16 |             32 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/factorial_accelerator/factorial/CU0/load_reg |                                                                             |                9 |             33 |
+|  clk_IBUF_BUFG |                                                               | rst_IBUF                                                                    |                9 |             33 |
+|  clk_5KHz_BUFG | Single_Cycle_SoC/mips/dp/pc_reg/q_reg[6]_3[0]                 | rst_IBUF                                                                    |               14 |             37 |
+|  clk_5KHz_BUFG |                                                               | rst_IBUF                                                                    |               25 |             74 |
++----------------+---------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+
+
+

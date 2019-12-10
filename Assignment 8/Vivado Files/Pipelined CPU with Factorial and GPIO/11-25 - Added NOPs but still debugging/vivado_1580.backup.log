@@ -1,0 +1,983 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Nov 23 22:41:48 2019
+# Process ID: 1580
+# Current directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5660 C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 8\Pipelined_CPU_Factorial_GPIO\Pipelined_CPU_Factorial_GPIO.xpr
+# Log file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/vivado.log
+# Journal file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 636.020 ; gain = 73.793
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB4454A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1681.941 ; gain = 933.105
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.runs/impl_1/fpga_Single_Cycle_SoC.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.runs/impl_1/fpga_Single_Cycle_SoC.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+update_compile_order -fileset sources_1
+open_project {C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Vivado/CMPE-140/A8_Pipelined_MIPS_Processor/Pipelined_MIPS_SoC' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.ip_user_files', nor could it be found using path 'C:/Vivado/CMPE-140/A8_Pipelined_MIPS_Processor/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1744.832 ; gain = 1.266
+update_compile_order -fileset sources_1
+current_project Pipelined_CPU_Factorial_GPIO
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new
+can't create directory "C:/Users/Sidarth": permission denied
+file mkdir {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new}
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v}}
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v}}
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v}}
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v}}
+update_compile_order -fileset sources_1
+current_project Pipelined_MIPS_SoC
+current_project Pipelined_CPU_Factorial_GPIO
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/datapath.v}}]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v}}
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/Single_Cycle_SoC.v}}]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v} w ]
+add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v}}
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fpga_Single_Cycle_SoC.v}}]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top fpga_Pipelined_SoC [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-2L
+Top: fpga_Pipelined_SoC
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1984.281 ; gain = 97.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga_Pipelined_SoC' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/button_debouncer.v:1]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (2#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Pipelined_SoC' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (3#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (4#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FE_DE_Stage_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FE_DE_Stage_Reg' (6#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (7#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (8#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (9#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:1]
+WARNING: [Synth 8-5788] Register rf_reg[0] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[1] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[2] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[3] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[4] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[5] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[6] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[7] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[8] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[9] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[10] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[11] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[12] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[13] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[14] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[15] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[16] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[17] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[18] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[19] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[20] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[21] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[22] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[23] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[24] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[25] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[26] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[27] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[28] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[29] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[30] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[31] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (10#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (10#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (11#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DE_EX_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DE_EX_State_Reg' (12#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v:23]
+WARNING: [Synth 8-689] width (3) of port connection 'alu_ctrlD' does not match port width (1) of module 'DE_EX_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:266]
+WARNING: [Synth 8-689] width (3) of port connection 'alu_ctrlE' does not match port width (1) of module 'DE_EX_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:280]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (13#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult' (14#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (15#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM_State_Reg' (16#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'we_dreg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v:22]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'we_dreg' (17#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_State_Reg' (18#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'sel' does not match port width (1) of module 'mux2' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:461]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (19#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile.dat' is read successfully [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (20#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:1]
+WARNING: [Synth 8-5788] Register ram_reg[0] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[1] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[2] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[3] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[4] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[5] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[6] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[7] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[8] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[9] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[10] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[11] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[12] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[13] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[14] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[15] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[16] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[17] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[18] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[19] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[20] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[21] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[22] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[23] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[24] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[25] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[26] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[27] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[28] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[29] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[30] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[31] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[32] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[33] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[34] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[35] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[36] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[37] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[38] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[39] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[40] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[41] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[42] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[43] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[44] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[45] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[46] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[47] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[48] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[49] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[50] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[51] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[52] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[53] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[54] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[55] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[56] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[57] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[58] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[59] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[60] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[61] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[62] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[63] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (21#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SoC_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_ad' (22#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SoC_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_mux4' (23#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (24#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+	Parameter w bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (25#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+	Parameter w bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (25#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized1' (25#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Factorial' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DP' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v:22]
+INFO: [Synth 8-6157] synthesizing module 'CMP_ERROR' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CMP_ERROR' (26#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CMP_GT' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CMP_GT' (27#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (28#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUL' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUL' (29#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (30#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'REG' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'REG' (31#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DP' (32#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v:22]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (33#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Factorial' (34#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_and' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fact_and' (35#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mux4' (36#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_done_stat_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_done_stat_reg' (37#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_err_stat_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_err_stat_reg' (38#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_top' (39#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ad' (40#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gpio_reg' (41#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_mux4' (42#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (43#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipelined_SoC' (44#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (44#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (45#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (46#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/led_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_Pipelined_SoC' (47#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2049.176 ; gain = 162.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[4] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[3] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[2] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[1] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[0] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2049.176 ; gain = 162.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2049.176 ; gain = 162.070
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/constrs_1/imports/constraints/fpga_Single_Cycle_SoC.xdc]
+Finished Parsing XDC File [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/constrs_1/imports/constraints/fpga_Single_Cycle_SoC.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2402.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:59 ; elapsed = 00:01:23 . Memory (MB): peak = 2749.098 ; gain = 861.992
+115 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:24 . Memory (MB): peak = 2749.098 ; gain = 861.992
+current_project Pipelined_MIPS_SoC
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: fpga_top
+WARNING: [Synth 8-2507] parameter declaration becomes local in CU with formal parameter declaration list [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/CU.v:21]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2749.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga_top' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fpga_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/button_debouncer.v:1]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (2#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'system' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system.v:3]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'new.dat' is read successfully [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (3#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mips_pipelined' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (4#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (5#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (6#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'D_Stage_Reg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/D_Stage_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'D_Stage_Reg' (7#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/D_Stage_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/control_unit/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/control_unit/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (8#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/control_unit/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (9#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (10#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/control_unit/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (11#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (12#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'E_Stage_Reg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/E_Stage_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'E_Stage_Reg' (13#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/E_Stage_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/alu.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/alu.v:13]
+WARNING: [Synth 8-567] referenced signal 'shamt' should be on the sensitivity list [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/alu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (14#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/alu.v:1]
+WARNING: [Synth 8-350] instance 'alu' of module 'alu' requires 8 connections, but only 5 given [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:384]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (14#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/MIPS/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult_inf' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/mult_inf.v:23]
+	Parameter SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mult_inf' (15#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/mult_inf.v:23]
+INFO: [Synth 8-6157] synthesizing module 'M_Stage_Reg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/M_Stage_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'M_Stage_Reg' (16#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/M_Stage_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HiLo_reg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/HiLo_reg.v:34]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'HiLo_reg' (17#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/HiLo_reg.v:34]
+INFO: [Synth 8-6157] synthesizing module 'W_Stage_Reg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/W_Stage_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'W_Stage_Reg' (18#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/W_Stage_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/mux4.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/mux4.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (19#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/mux4.v:23]
+WARNING: [Synth 8-3848] Net wd_dmM in module/entity mips_pipelined does not have driver. [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:149]
+WARNING: [Synth 8-3848] Net rd3 in module/entity mips_pipelined does not have driver. [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:33]
+WARNING: [Synth 8-3848] Net jrE in module/entity mips_pipelined does not have driver. [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'mips_pipelined' (20#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (21#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_top' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/fact_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'and_fact' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/and_fact.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'and_fact' (22#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/and_fact.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/fact_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/fact_ad.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (23#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/fact_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_reg.v:1]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (24#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_reg.v:1]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (24#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FSMmult' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/FSMmult.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/CU.v:2]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter S0 bound to: 3'b000 
+	Parameter S1 bound to: 3'b001 
+	Parameter S2 bound to: 3'b010 
+	Parameter S3 bound to: 3'b011 
+	Parameter S4 bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/CU.v:33]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/CU.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (25#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/CU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DP' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/DP.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'CNT' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/CNT.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (26#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/CNT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/Multiplexer.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer' (27#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/Multiplexer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/Register.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Register' (28#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/Register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CMP' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/CMP.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CMP' (29#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/CMP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multiplier' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/Multiplier.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiplier' (30#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/factorial/Multiplier.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DP' (31#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/DP.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FSMmult' (32#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/FSMmult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_reg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized1' (32#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_res_done_reg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/fact_res_done_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fact_res_done_reg' (33#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/fact_res_done_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_res_err_reg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/fact_res_err_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fact_res_err_reg' (34#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/fact_res_err_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fact_top' (35#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/fact_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_top.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_ad.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_ad.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ad' (36#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_ad.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (37#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fact/gpio_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'system_AD' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system_AD.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'system_AD' (38#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system_AD.v:3]
+WARNING: [Synth 8-3848] Net dummy5 in module/entity system does not have driver. [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'system' (39#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/hex_to_7seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/hex_to_7seg.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (40#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/hex_to_7seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/led_mux.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (41#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/led_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top' (42#1) [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/fpga_top.v:23]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[29]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[25]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[24]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[23]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[22]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[21]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[20]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[19]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[18]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[17]
+WARNING: [Synth 8-3331] design system_AD has unconnected port A[16]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[31]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[30]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[29]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[28]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[27]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[26]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[25]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[24]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[23]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[22]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[21]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[20]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[19]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[18]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[17]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[16]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[15]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[14]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[13]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[12]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[11]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[10]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[9]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[8]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[7]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[6]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[5]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[4]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[3]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[2]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[1]
+WARNING: [Synth 8-3331] design mips_pipelined has unconnected port rd3[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2749.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[31] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[30] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[29] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[28] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[27] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[26] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[25] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[24] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[23] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[22] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[21] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[20] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[19] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[18] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[17] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[16] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[15] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[14] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[13] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[12] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[11] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[10] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[9] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[8] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[7] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[6] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[5] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[4] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[3] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[2] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[1] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin M_Stage_Reg:jrE[0] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/Pipeline_MIPS/mips_pipelined.v:418]
+WARNING: [Synth 8-3295] tying undriven pin MIPS:ra3[4] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system.v:39]
+WARNING: [Synth 8-3295] tying undriven pin MIPS:ra3[3] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system.v:39]
+WARNING: [Synth 8-3295] tying undriven pin MIPS:ra3[2] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system.v:39]
+WARNING: [Synth 8-3295] tying undriven pin MIPS:ra3[1] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system.v:39]
+WARNING: [Synth 8-3295] tying undriven pin MIPS:ra3[0] to constant 0 [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/sources_1/new/FPGA/System/system.v:39]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2749.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2749.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/constrs_1/new/FPGA_top.xdc]
+Finished Parsing XDC File [C:/Users/Sidarth Shahri/Desktop/Previous Material/Lab 8/Pipelined_MIPS_SoC/Pipelined_MIPS_SoC.srcs/constrs_1/new/FPGA_top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2964.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 2964.699 ; gain = 214.777
+103 Infos, 87 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2964.699 ; gain = 214.777
+current_project Pipelined_CPU_Factorial_GPIO
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3064.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga_Pipelined_SoC' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/button_debouncer.v:1]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (2#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Pipelined_SoC' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (3#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (4#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FE_DE_Stage_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FE_DE_Stage_Reg' (6#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (7#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (8#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (9#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:1]
+WARNING: [Synth 8-5788] Register rf_reg[0] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[1] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[2] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[3] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[4] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[5] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[6] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[7] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[8] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[9] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[10] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[11] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[12] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[13] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[14] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[15] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[16] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[17] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[18] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[19] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[20] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[21] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[22] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[23] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[24] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[25] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[26] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[27] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[28] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[29] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[30] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[31] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (10#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (10#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (11#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DE_EX_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DE_EX_State_Reg' (12#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v:23]
+WARNING: [Synth 8-689] width (3) of port connection 'alu_ctrlD' does not match port width (1) of module 'DE_EX_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:266]
+WARNING: [Synth 8-689] width (3) of port connection 'alu_ctrlE' does not match port width (1) of module 'DE_EX_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:280]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (13#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult' (14#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (15#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM_State_Reg' (16#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'we_dreg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v:22]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'we_dreg' (17#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_State_Reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_State_Reg' (18#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (19#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile.dat' is read successfully [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (20#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:1]
+WARNING: [Synth 8-5788] Register ram_reg[0] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[1] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[2] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[3] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[4] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[5] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[6] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[7] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[8] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[9] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[10] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[11] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[12] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[13] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[14] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[15] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[16] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[17] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[18] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[19] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[20] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[21] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[22] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[23] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[24] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[25] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[26] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[27] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[28] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[29] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[30] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[31] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[32] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[33] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[34] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[35] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[36] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[37] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[38] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[39] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[40] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[41] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[42] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[43] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[44] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[45] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[46] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[47] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[48] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[49] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[50] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[51] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[52] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[53] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[54] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[55] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[56] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[57] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[58] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[59] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[60] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[61] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[62] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[63] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (21#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SoC_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_ad' (22#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SoC_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_mux4' (23#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (24#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+	Parameter w bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (25#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+	Parameter w bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (25#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized1' (25#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Factorial' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DP' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v:22]
+INFO: [Synth 8-6157] synthesizing module 'CMP_ERROR' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CMP_ERROR' (26#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CMP_GT' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CMP_GT' (27#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (28#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUL' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUL' (29#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (30#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'REG' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'REG' (31#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DP' (32#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v:22]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (33#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Factorial' (34#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_and' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fact_and' (35#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mux4' (36#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_done_stat_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_done_stat_reg' (37#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_err_stat_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_err_stat_reg' (38#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_top' (39#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ad' (40#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gpio_reg' (41#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_mux4' (42#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (43#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipelined_SoC' (44#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (44#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (45#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (46#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/FPGA/led_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_Pipelined_SoC' (47#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3064.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[4] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[3] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[2] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[1] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Pipelined_SoC:ra3[0] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/fpga_Pipelined_SoC.v:65]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3064.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3064.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/constrs_1/imports/constraints/fpga_Single_Cycle_SoC.xdc]
+Finished Parsing XDC File [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/constrs_1/imports/constraints/fpga_Single_Cycle_SoC.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 3568.285 ; gain = 503.453
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3568.285 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sun Nov 24 06:25:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.runs/synth_1/runme.log
+[Sun Nov 24 06:25:18 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.runs/impl_1/runme.log
+current_project Pipelined_MIPS_SoC
+close_project
+current_project Pipelined_CPU_Factorial_GPIO
+current_project Single_Cycle_with_Factorial_GPIO
+current_project Pipelined_CPU_Factorial_GPIO
+close_design
+close_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3568.285 ; gain = 0.000
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 24 06:32:16 2019...

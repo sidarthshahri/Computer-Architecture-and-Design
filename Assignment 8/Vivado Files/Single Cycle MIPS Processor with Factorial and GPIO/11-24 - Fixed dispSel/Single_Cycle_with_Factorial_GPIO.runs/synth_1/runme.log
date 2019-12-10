@@ -1,0 +1,923 @@
+
+*** Running vivado
+    with args -log fpga_Single_Cycle_SoC.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_Single_Cycle_SoC.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fpga_Single_Cycle_SoC.tcl -notrace
+Command: synth_design -top fpga_Single_Cycle_SoC -part xc7a35tcpg236-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 840 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 339.145 ; gain = 93.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga_Single_Cycle_SoC' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fpga_Single_Cycle_SoC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/button_debouncer.v:1]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (2#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Single_Cycle_SoC' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/Single_Cycle_SoC.v:27]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (3#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (4#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (5#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (5#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:1]
+WARNING: [Synth 8-5788] Register rf_reg[0] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[1] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[2] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[3] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[4] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[5] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[6] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[7] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[8] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[9] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[10] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[11] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[12] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[13] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[14] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[15] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[16] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[17] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[18] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[19] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[20] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[21] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[22] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[23] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[24] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[25] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[26] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[27] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[28] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[29] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[30] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+WARNING: [Synth 8-5788] Register rf_reg[31] in module regfile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (6#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (7#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/alu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/mult.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult' (9#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/mult.v:23]
+INFO: [Synth 8-6157] synthesizing module 'we_dreg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/we_dreg.v:22]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'we_dreg' (10#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/we_dreg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/shifter.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (11#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/shifter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (12#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (13#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (14#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (15#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/controlunit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (16#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile.dat' is read successfully [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (17#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:1]
+WARNING: [Synth 8-5788] Register ram_reg[0] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[1] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[2] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[3] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[4] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[5] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[6] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[7] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[8] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[9] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[10] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[11] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[12] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[13] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[14] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[15] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[16] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[17] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[18] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[19] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[20] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[21] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[22] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[23] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[24] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[25] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[26] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[27] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[28] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[29] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[30] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[31] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[32] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[33] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[34] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[35] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[36] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[37] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[38] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[39] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[40] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[41] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[42] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[43] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[44] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[45] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[46] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[47] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[48] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[49] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[50] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[51] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[52] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[53] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[54] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[55] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[56] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[57] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[58] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[59] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[60] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[61] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[62] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+WARNING: [Synth 8-5788] Register ram_reg[63] in module dmem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (18#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SoC_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/SoC_ad.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_ad' (19#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/SoC_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SoC_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/SoC_mux4.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/SoC_mux4.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_mux4' (20#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/SoC_mux4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_ad.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (21#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23]
+	Parameter w bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (22#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23]
+	Parameter w bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (22#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized1' (22#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Factorial' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DP' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/DP.v:22]
+INFO: [Synth 8-6157] synthesizing module 'CMP_ERROR' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CMP_ERROR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CMP_ERROR' (23#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CMP_ERROR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CMP_GT' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CMP_GT.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CMP_GT' (24#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CMP_GT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CNT.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (25#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CNT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUL' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/MUL.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUL' (26#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/MUL.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/MUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (27#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'REG' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/REG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'REG' (28#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/REG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DP' (29#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/DP.v:22]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (30#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CU.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Factorial' (31#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_and' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_and.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fact_and' (32#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_and.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_mux4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_mux4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fact_mux4' (33#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_mux4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_done_stat_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_done_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_done_stat_reg' (34#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_done_stat_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fact_err_stat_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_err_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_err_stat_reg' (35#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_err_stat_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fact_top' (36#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ad' (37#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gpio_reg' (38#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_mux4' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_mux4' (39#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (40#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cycle_SoC' (41#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/Single_Cycle_SoC.v:27]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (41#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (42#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (43#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/validation_wrapper/led_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_Single_Cycle_SoC' (44#1) [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fpga_Single_Cycle_SoC.v:22]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 413.727 ; gain = 168.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Single_Cycle_SoC:ra3[4] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fpga_Single_Cycle_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Single_Cycle_SoC:ra3[3] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fpga_Single_Cycle_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Single_Cycle_SoC:ra3[2] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fpga_Single_Cycle_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Single_Cycle_SoC:ra3[1] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fpga_Single_Cycle_SoC.v:65]
+WARNING: [Synth 8-3295] tying undriven pin Single_Cycle_SoC:ra3[0] to constant 0 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fpga_Single_Cycle_SoC.v:65]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 413.727 ; gain = 168.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 413.727 ; gain = 168.301
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/constrs_1/new/fpga_Single_Cycle_SoC.xdc]
+Finished Parsing XDC File [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/constrs_1/new/fpga_Single_Cycle_SoC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/constrs_1/new/fpga_Single_Cycle_SoC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_Single_Cycle_SoC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_Single_Cycle_SoC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 771.141 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 771.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 771.141 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 771.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 771.141 ; gain = 525.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 771.141 ; gain = 525.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 771.141 ; gain = 525.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_4sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "debounced_button0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'CU'
+INFO: [Synth 8-5544] ROM "CU_error" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sel1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/alu.v:9]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  state0 |                           000001 |                              000
+                  state1 |                           000010 |                              001
+                  state5 |                           000100 |                              101
+                  state2 |                           001000 |                              010
+                  state3 |                           010000 |                              011
+                  state4 |                           100000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'CU'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 771.141 ; gain = 525.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 105   
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 124   
+	  33 Input     32 Bit        Muxes := 3     
+	  18 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+	  14 Input     10 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 101   
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module dreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 39    
+	  33 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 33    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 1     
+Module mult 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module we_dreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     11 Bit        Muxes := 1     
+Module auxdec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input     10 Bit        Muxes := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input     32 Bit        Muxes := 1     
+Module dmem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 64    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 71    
+	   2 Input      1 Bit        Muxes := 65    
+Module SoC_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module SoC_mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module fact_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module fact_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module fact_reg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module fact_reg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUL 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module REG 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+Module fact_mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module fact_done_stat_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module fact_err_stat_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module gpio_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module gpio_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module gpio_mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module mux2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module led_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/mult.v:28]
+DSP Report: Generating DSP dp/multu/y, operation Mode is: A*B.
+DSP Report: operator dp/multu/y is absorbed into DSP dp/multu/y.
+DSP Report: operator dp/multu/y is absorbed into DSP dp/multu/y.
+DSP Report: Generating DSP dp/multu/y, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator dp/multu/y is absorbed into DSP dp/multu/y.
+DSP Report: operator dp/multu/y is absorbed into DSP dp/multu/y.
+DSP Report: Generating DSP dp/multu/y, operation Mode is: A*B.
+DSP Report: operator dp/multu/y is absorbed into DSP dp/multu/y.
+DSP Report: operator dp/multu/y is absorbed into DSP dp/multu/y.
+DSP Report: Generating DSP dp/multu/y, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator dp/multu/y is absorbed into DSP dp/multu/y.
+DSP Report: operator dp/multu/y is absorbed into DSP dp/multu/y.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/MUL.v:9]
+DSP Report: Generating DSP factorial/DP0/U3/Z0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: register A is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: operator factorial/DP0/U3/Z0 is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: operator factorial/DP0/U3/Z0 is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: Generating DSP factorial/DP0/U3/Z0, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: register A is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: operator factorial/DP0/U3/Z0 is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: operator factorial/DP0/U3/Z0 is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: Generating DSP factorial/DP0/U3/Z0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: register A is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: operator factorial/DP0/U3/Z0 is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: operator factorial/DP0/U3/Z0 is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: Generating DSP factorial/DP0/U3/Z0, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: register A is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: operator factorial/DP0/U3/Z0 is absorbed into DSP factorial/DP0/U3/Z0.
+DSP Report: operator factorial/DP0/U3/Z0 is absorbed into DSP factorial/DP0/U3/Z0.
+INFO: [Synth 8-5545] ROM "clk_gen/count2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_gen/clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design imem has unconnected port a[5]
+WARNING: [Synth 8-3331] design fpga_Single_Cycle_SoC has unconnected port button
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 771.141 ; gain = 525.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mips        | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips        | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips        | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips        | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fact_top    | A2*B2            | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fact_top    | (PCIN>>17)+A2*B2 | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fact_top    | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fact_top    | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 789.875 ; gain = 544.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 815.582 ; gain = 570.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[31]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[30]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[29]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[28]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[27]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[26]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[25]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[24]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[23]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[22]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[21]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[20]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[19]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[18]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[17]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[16]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[15]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[14]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[13]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[12]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[11]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[10]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[9]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[8]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[7]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[6]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[5]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[4]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[3]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[2]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[1]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+WARNING: [Synth 8-3332] Sequential element (Single_Cycle_SoC/mips/dp/alu/y_reg[0]) is unused and will be removed from module fpga_Single_Cycle_SoC.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 889.953 ; gain = 644.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 889.953 ; gain = 644.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 889.953 ; gain = 644.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 889.953 ; gain = 644.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 889.953 ; gain = 644.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 889.953 ; gain = 644.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 889.953 ; gain = 644.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    52|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |    69|
+|5     |LUT2    |   396|
+|6     |LUT3    |    97|
+|7     |LUT4    |   404|
+|8     |LUT5    |   803|
+|9     |LUT6    |  2270|
+|10    |MUXF7   |   361|
+|11    |MUXF8   |   163|
+|12    |FDCE    |   590|
+|13    |FDPE    |    64|
+|14    |FDRE    |  1314|
+|15    |FDSE    |   775|
+|16    |IBUF    |     7|
+|17    |OBUF    |    17|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------------------+---------------------------+------+
+|      |Instance                  |Module                     |Cells |
++------+--------------------------+---------------------------+------+
+|1     |top                       |                           |  7387|
+|2     |  Single_Cycle_SoC        |Single_Cycle_SoC           |  7297|
+|3     |    dmem                  |dmem                       |  2974|
+|4     |    factorial_accelerator |fact_top                   |   324|
+|5     |      fact_done_stat_reg  |fact_done_stat_reg         |     1|
+|6     |      fact_err_stat_reg   |fact_err_stat_reg          |     1|
+|7     |      factorial           |Factorial                  |   279|
+|8     |        CU0               |CU                         |    86|
+|9     |        DP0               |DP                         |   193|
+|10    |          R1              |REG                        |    32|
+|11    |          U2              |CNT                        |   138|
+|12    |          U3              |MUL                        |    23|
+|13    |      go_pulse_reg        |fact_reg__parameterized0   |     2|
+|14    |      go_reg              |fact_reg__parameterized0_2 |     1|
+|15    |      n_reg               |fact_reg                   |     7|
+|16    |      result_reg          |fact_reg__parameterized1   |    33|
+|17    |    gpio_module           |gpio_top                   |   157|
+|18    |      gpO1_reg            |gpio_reg                   |    35|
+|19    |      gpO2_reg            |gpio_reg_1                 |   122|
+|20    |    mips                  |mips                       |  3842|
+|21    |      dp                  |datapath                   |  3842|
+|22    |        alu               |alu                        |    20|
+|23    |        pc_plus_4         |adder                      |     2|
+|24    |        pc_plus_br        |adder_0                    |     2|
+|25    |        pc_reg            |dreg                       |  2697|
+|26    |        rf                |regfile                    |  1121|
+|27    |  clk_gen                 |clk_gen                    |    56|
+|28    |  led_mux                 |led_mux                    |     8|
++------+--------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 889.953 ; gain = 644.527
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:13 . Memory (MB): peak = 889.953 ; gain = 287.113
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 889.953 ; gain = 644.527
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 579 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 889.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+232 Infos, 142 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 889.953 ; gain = 644.527
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 889.953 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.runs/synth_1/fpga_Single_Cycle_SoC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_Single_Cycle_SoC_utilization_synth.rpt -pb fpga_Single_Cycle_SoC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 23 18:20:59 2019...

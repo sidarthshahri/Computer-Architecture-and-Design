@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Assignment_5.srcs/sources_1/imports/datapath/adder.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/datapath/alu.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/control_unit/auxdec.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/control_unit/controlunit.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/datapath/datapath.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/memory/dmem.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/datapath/dreg.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/memory/imem.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/control_unit/maindec.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/mips/mips.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/mips/mips_top.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/datapath/mux2.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/datapath/regfile.v" \
+"../../../../Assignment_5.srcs/sources_1/imports/datapath/signext.v" \
+"../../../../Assignment_5.srcs/sim_1/imports/testbench/tb_mips_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

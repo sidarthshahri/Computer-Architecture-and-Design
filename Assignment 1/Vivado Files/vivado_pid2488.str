@@ -1,0 +1,941 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 2488
+License: Customer
+
+Current time: 	Tue Sep 03 14:08:28 MST 2019
+Time zone: 	Mountain Standard Time (America/Phoenix)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 3840x2160
+Screen resolution (DPI): 192
+Available screens: 1
+Available disk space: 173 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=24
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Sidarth Shahri
+User home directory: C:/Users/Sidarth Shahri
+User working directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Sidarth Shahri/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Sidarth Shahri/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Sidarth Shahri/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/vivado.log
+Vivado journal file location: 	C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/vivado.jou
+Engine tmp dir: 	C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/.Xil/Vivado-2488-DESKTOP-U1OB0E7
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	231 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 557 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  3216 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment_1\Assignment_1.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 598 MB. GUI used memory: 77 MB. Current time: 9/3/19, 2:08:32 PM MST
+// Tcl Message: open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 125 MB (+128895kb) [00:00:26]
+// [Engine Memory]: 653 MB (+533740kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  5081 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 706.465 ; gain = 64.309 
+// Project name: Assignment_1; location: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1; part: xc7a35tcpg236-2L
+// [GUI Memory]: 135 MB (+3087kb) [00:00:31]
+// [Engine Memory]: 690 MB (+4387kb) [00:00:32]
+dismissDialog("Open Project"); // bx (cp)
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// HOptionPane Error: 'Invalid file 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/mux.v'. File does not exist. (Invalid File)'
+// Elapsed time: 52 seconds
+selectButton("RDIResource.HChooserHelpers_INVALID_FILE_FILE_DOES_NOT_EXIST_OK", "OK"); // JButton (C, J)
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // af (al, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mux.v"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Sidarth": permission denied 
+// Tcl Command: 'file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Sidarth": permission denied 
+// Tcl Command: 'file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new'
+// Tcl Command: 'file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new'
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// Tcl Command: 'file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Sidarth": permission denied 
+// Tcl Message: file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Sidarth": permission denied 
+dismissDialog("Add Sources"); // c (cp)
+// bx (cp):  Add Sources  : addNotify
+// Tcl Message: file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Sidarth": permission denied 
+// Tcl Command: 'file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Sidarth": permission denied 
+// Tcl Message: file mkdir {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new} 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mux.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mux.v}} 
+// I (cp): Define Module: addNotify
+dismissDialog("Add Sources"); // bx (cp)
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 144 MB (+2658kb) [-06:-56:-51]
+// PAPropertyPanels.initPanels (mux.v) elapsed time: 0.3s
+// [Engine Memory]: 728 MB (+3547kb) [-06:-56:-48]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("mux.v", 817, 735); // cl (w, cp)
+selectCodeEditor("mux.v", 835, 801); // cl (w, cp)
+selectCodeEditor("mux.v", 787, 783); // cl (w, cp)
+selectCodeEditor("mux.v", 1207, 653); // cl (w, cp)
+selectCodeEditor("mux.v", 151, 111); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  25199737 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 740 MB. GUI used memory: 81 MB. Current time: 9/3/19, 2:11:55 PM MST
+// Elapsed time: 25258 seconds
+selectCodeEditor("mux.v", 477, 227); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("mux.v", 111, 203); // cl (w, cp)
+selectCodeEditor("mux.v", 55, 281); // cl (w, cp)
+selectCodeEditor("mux.v", 393, 299); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("mux.v", 119, 145); // cl (w, cp)
+selectCodeEditor("mux.v", 157, 363); // cl (w, cp)
+selectCodeEditor("mux.v", 153, 347); // cl (w, cp)
+selectCodeEditor("mux.v", 285, 187); // cl (w, cp)
+selectCodeEditor("mux.v", 355, 191); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("mux.v", 211, 121); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("mux.v", 459, 343); // cl (w, cp)
+selectCodeEditor("mux.v", 221, 121); // cl (w, cp)
+selectCodeEditor("mux.v", 221, 121, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("mux.v", 253, 323); // cl (w, cp)
+selectCodeEditor("mux.v", 267, 341); // cl (w, cp)
+selectCodeEditor("mux.v", 315, 181); // cl (w, cp)
+selectCodeEditor("mux.v", 511, 301); // cl (w, cp)
+selectCodeEditor("mux.v", 501, 377); // cl (w, cp)
+selectCodeEditor("mux.v", 427, 331); // cl (w, cp)
+selectCodeEditor("mux.v", 323, 173); // cl (w, cp)
+selectCodeEditor("mux.v", 323, 173, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("mux.v", 441, 307); // cl (w, cp)
+selectCodeEditor("mux.v", 393, 333); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("mux.v", 491, 363); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("mux.v", 423, 427); // cl (w, cp)
+selectCodeEditor("mux.v", 351, 439); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("mux.v", 331, 443); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("mux.v", 383, 421); // cl (w, cp)
+selectCodeEditor("mux.v", 201, 453); // cl (w, cp)
+selectCodeEditor("mux.v", 495, 471); // cl (w, cp)
+selectCodeEditor("mux.v", 299, 497); // cl (w, cp)
+selectCodeEditor("mux.v", 359, 425); // cl (w, cp)
+selectCodeEditor("mux.v", 411, 431); // cl (w, cp)
+selectCodeEditor("mux.v", 525, 587); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("mux.v", 89, 417); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("mux.v", 59, 289); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("mux.v", 187, 281); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("mux.v", 643, 351); // cl (w, cp)
+selectCodeEditor("mux.v", 429, 443); // cl (w, cp)
+selectCodeEditor("mux.v", 479, 667); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 94 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+// Elapsed time: 10 seconds
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// Elapsed time: 60 seconds
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 71 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Elapsed time: 81 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false); // B (D, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  3817 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 741 MB. GUI used memory: 70 MB. Current time: 9/5/19, 1:41:31 PM MST
+// WARNING: HEventQueue.dispatchEvent() is taking  80182 ms.
+// Elapsed time: 171123 seconds
+selectCodeEditor("mux.v", 175, 281); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 741 MB. GUI used memory: 71 MB. Current time: 9/5/19, 2:11:27 PM MST
+// WARNING: HEventQueue.dispatchEvent() is taking  25200464 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 741 MB. GUI used memory: 66 MB. Current time: 9/5/19, 2:41:27 PM MST
+// Elapsed time: 3676 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+selectButton(RDIResourceCommand.RDICommands_COPY, (String) null); // B (f, cp)
+selectCodeEditor("mux.v", 699, 227); // cl (w, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_UNSELECT_TYPE, "Unselect Type"); // ac (cp)
+// Elapsed time: 12 seconds
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // X (q, cp)
+selectCodeEditor("mux.v", 245, 157); // cl (w, cp)
+// Elapsed time: 158 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+// Elapsed time: 52 seconds
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // af (al, c)
+// Elapsed time: 574 seconds
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 631 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Elapsed time: 82 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectCodeEditor("mux.v", 261, 65); // cl (w, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux.v", 1, true, false); // k (j, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+// Elapsed time: 13 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // af (al, c)
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "reg"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "cnt"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mul"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "cmp"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 51 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cmp.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cmp.v}} 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cnt.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cnt.v}} 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mul.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mul.v}} 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v}} 
+// I (cp): Define Modules: addNotify
+dismissDialog("Add Sources"); // bx (cp)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "cnt.v", 1); // L (Q, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "mul.v", 2); // L (Q, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Modules"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnt (cnt.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mul (mul.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mul (mul.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mul (mul.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnt (cnt.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnt (cnt.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmp (cmp.v)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmp (cmp.v)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 741 MB. GUI used memory: 68 MB. Current time: 9/5/19, 3:11:28 PM MST
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "reg"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: 'Create Source File'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, reg.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, reg.v]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v}} 
+dismissDialog("Remove Sources"); // bx (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, reg.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, reg.v]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: remove_files  {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v}} 
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: file delete -force {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v} 
+dismissDialog("Remove Sources"); // bx (aE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_SCAN_AND_ADD_RTL_INCLUDE_FILES_INTO, "Scan and add RTL include files into project", true); // g (bm, c): TRUE
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "reg"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 5 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v} w ] 
+// bx (cp):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v}} 
+// I (cp): Define Module: addNotify
+dismissDialog("Add Sources"); // bx (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, reg.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, reg.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, reg.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, reg.v]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v}} 
+// Tcl Message: file delete -force {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/reg.v} 
+dismissDialog("Remove Sources"); // bx (aE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux.v", 1); // k (j, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "mux.v", 'c'); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux (mux.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mul (mul.v)]", 4, false, true, false, false, false, false); // B (D, cp) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnt (cnt.v)]", 3, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mux.v}}] -no_script -reset -force -quiet 
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cmp.v}}] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cnt.v}}] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mul.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mux.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cmp.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cnt.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mul.v}} 
+// Tcl Message: file delete -force {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mux.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cmp.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/cnt.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/mul.v} 
+dismissDialog("Remove Sources"); // bx (aE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MUX"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "REG"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "CNT"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "CMP"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MUL"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 36 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/CMP.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Add Sources  : addNotify
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/CMP.v}} 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/CNT.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/CNT.v}} 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUL.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUL.v}} 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUX.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUX.v}} 
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/REG.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/REG.v}} 
+// I (cp): Define Modules: addNotify
+dismissDialog("Add Sources"); // bx (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Modules"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 23 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CMP (CMP.v)]", 2, false); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, CNT.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, REG.v]", 5, false, true, false, false, false, false); // B (D, cp) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, MUX.v]", 4, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/CNT.v}}] -no_script -reset -force -quiet 
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUL.v}}] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUX.v}}] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/REG.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/CNT.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUL.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUX.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/REG.v}} 
+// Tcl Message: file delete -force {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/CNT.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUL.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUX.v} {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/REG.v} 
+dismissDialog("Remove Sources"); // bx (aE)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 3 seconds
+dismissDialog("Add Sources"); // c (cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MUX"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUX.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUX.v}} 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "REG"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 5 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/REG.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/REG.v}} 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "CNT"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "CMP"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: 'Create Source File'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "MUL"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 20 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/CNT.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/CNT.v}} 
+// bx (cp):  Add Sources  : addNotify
+// Tcl Message: close [ open {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUL.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment_1/Assignment_1.srcs/sources_1/new/MUL.v}} 
+// I (cp): Define Modules: addNotify
+dismissDialog("Add Sources"); // bx (cp)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "MUL.v", 1); // L (Q, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "CNT.v", 0); // L (Q, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Modules"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CNT (CNT.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX (MUX.v)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX (MUX.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("MUX.v", 397, 213); // cl (w, cp)
+selectCodeEditor("MUX.v", 121, 87); // cl (w, cp)
+selectCodeEditor("MUX.v", 121, 87, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("MUX.v", 337, 185); // cl (w, cp)
+selectCodeEditor("MUX.v", 115, 103); // cl (w, cp)
+selectCodeEditor("MUX.v", 113, 101, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("MUX.v", 113, 101); // cl (w, cp)
+selectCodeEditor("MUX.v", 113, 101); // cl (w, cp)
+selectCodeEditor("MUX.v", 113, 101); // cl (w, cp)
+selectCodeEditor("MUX.v", 105, 91); // cl (w, cp)
+selectCodeEditor("MUX.v", 105, 91, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("MUX.v", 133, 97); // cl (w, cp)
+selectCodeEditor("MUX.v", 133, 97, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("MUX.v", 225, 551); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.v", 1); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("REG.v", 3, 55); // cl (w, cp)
+selectCodeEditor("REG.v", 113, 87); // cl (w, cp)
+selectCodeEditor("REG.v", 113, 87, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("REG.v", 307, 141); // cl (w, cp)
+selectCodeEditor("REG.v", 155, 91); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // k (j, cp)
+selectCodeEditor("REG.v", 245, 91); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.v", 1); // k (j, cp)
+selectCodeEditor("MUX.v", 1, 117); // cl (w, cp)
+selectCodeEditor("MUX.v", 3, 145); // cl (w, cp)
+selectCodeEditor("MUX.v", 1, 175); // cl (w, cp)
+selectCodeEditor("MUX.v", 1, 211); // cl (w, cp)
+selectCodeEditor("MUX.v", 323, 133); // cl (w, cp)
+selectCodeEditor("MUX.v", 47, 213); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // k (j, cp)
+selectCodeEditor("REG.v", 247, 137); // cl (w, cp)
+selectCodeEditor("REG.v", 217, 121); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // k (j, cp)
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // k (j, cp)
+selectCodeEditor("REG.v", 363, 181); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("REG.v", 307, 109); // cl (w, cp)
+selectCodeEditor("REG.v", 263, 211); // cl (w, cp)
+selectCodeEditor("REG.v", 315, 259); // cl (w, cp)
+selectCodeEditor("REG.v", 257, 249); // cl (w, cp)
+selectCodeEditor("REG.v", 305, 119); // cl (w, cp)
+selectCodeEditor("REG.v", 289, 145); // cl (w, cp)
+selectCodeEditor("REG.v", 333, 153); // cl (w, cp)
+selectCodeEditor("REG.v", 417, 225); // cl (w, cp)
+selectCodeEditor("REG.v", 313, 179); // cl (w, cp)
+selectCodeEditor("REG.v", 313, 223); // cl (w, cp)
+selectCodeEditor("REG.v", 319, 257); // cl (w, cp)
+selectCodeEditor("REG.v", 327, 285); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  25199650 ms.
+// Elapsed time: 705 seconds
+selectCodeEditor("REG.v", 121, 375); // cl (w, cp)
+// Elapsed time: 114 seconds
+selectCodeEditor("REG.v", 115, 333); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("REG.v", 363, 295); // cl (w, cp)
+selectCodeEditor("REG.v", 381, 311); // cl (w, cp)
+selectCodeEditor("REG.v", 481, 325); // cl (w, cp)
+selectCodeEditor("REG.v", 357, 359); // cl (w, cp)
+// Elapsed time: 47 seconds
+selectCodeEditor("REG.v", 387, 311); // cl (w, cp)
+selectCodeEditor("REG.v", 387, 311, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("REG.v", 95, 371); // cl (w, cp)
+selectCodeEditor("REG.v", 95, 371, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 53 seconds
+selectCodeEditor("REG.v", 277, 485); // cl (w, cp)
+selectCodeEditor("REG.v", 255, 113); // cl (w, cp)
+selectCodeEditor("REG.v", 469, 249); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("REG.v", 333, 125); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("REG.v", 461, 489); // cl (w, cp)
+selectCodeEditor("REG.v", 431, 467); // cl (w, cp)
+typeControlKey((HResource) null, "REG.v", 'v'); // cl (w, cp)
+selectCodeEditor("REG.v", 287, 443); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("REG.v", 75, 35); // cl (w, cp)
+typeControlKey((HResource) null, "REG.v", 'v'); // cl (w, cp)
+selectCodeEditor("REG.v", 301, 219); // cl (w, cp)
+selectCodeEditor("REG.v", 223, 527); // cl (w, cp)
+selectCodeEditor("REG.v", 205, 563); // cl (w, cp)
+selectCodeEditor("REG.v", 365, 493); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("REG.v", 215, 373); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("REG.v", 287, 29); // cl (w, cp)
+selectCodeEditor("REG.v", 165, 245); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("REG.v", 61, 541); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("REG.v", 209, 87); // cl (w, cp)
+selectCodeEditor("REG.v", 9, 125); // cl (w, cp)
+selectCodeEditor("REG.v", 97, 137); // cl (w, cp)
+selectCodeEditor("REG.v", 179, 433); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 3, true); // B (D, cp) - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("REG.v", 133, 119); // cl (w, cp)
+selectCodeEditor("REG.v", 147, 21); // cl (w, cp)
+selectCodeEditor("REG.v", 735, 325); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("REG.v", 3, 25); // cl (w, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("REG.v", 141, 481); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("REG.v", 419, 481); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 184 seconds
+selectCodeEditor("REG.v", 365, 351); // cl (w, cp)
+selectCodeEditor("REG.v", 127, 169); // cl (w, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("REG.v", 101, 105); // cl (w, cp)
+selectCodeEditor("REG.v", 99, 251); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("REG.v", 299, 125); // cl (w, cp)
+selectCodeEditor("REG.v", 333, 147); // cl (w, cp)
+selectCodeEditor("REG.v", 349, 175); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("REG.v", 97, 213); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 741 MB. GUI used memory: 77 MB. Current time: 9/5/19, 3:41:28 PM MST
+selectCodeEditor("REG.v", 397, 197); // cl (w, cp)
+selectCodeEditor("REG.v", 357, 465); // cl (w, cp)
+selectCodeEditor("REG.v", 385, 179); // cl (w, cp)
+selectCodeEditor("REG.v", 507, 383); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("REG.v", 243, 159); // cl (w, cp)
+selectCodeEditor("REG.v", 263, 155); // cl (w, cp)
+selectCodeEditor("REG.v", 263, 155, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("REG.v", 377, 211); // cl (w, cp)
+// Elapsed time: 36 seconds
+selectCodeEditor("REG.v", 97, 317); // cl (w, cp)
+selectCodeEditor("REG.v", 331, 323); // cl (w, cp)
+selectCodeEditor("REG.v", 357, 375); // cl (w, cp)
+selectCodeEditor("REG.v", 357, 481); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("REG.v", 105, 273); // cl (w, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, REG.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 40 seconds
+selectCodeEditor("REG.v", 313, 321); // cl (w, cp)
+selectCodeEditor("REG.v", 247, 465); // cl (w, cp)
+selectCodeEditor("REG.v", 247, 465); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.v", 1); // k (j, cp)
+selectCodeEditor("MUX.v", 255, 207); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 210 seconds
+selectCodeEditor("MUX.v", 253, 307); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "REG.v", 2); // k (j, cp)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CNT (CNT.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CNT (CNT.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CNT (CNT.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CNT (CNT.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("CNT.v", 227, 425); // cl (w, cp)
+selectCodeEditor("CNT.v", 1207, 401); // cl (w, cp)
+selectCodeEditor("CNT.v", 253, 189); // cl (w, cp)
+// Elapsed time: 76 seconds
+selectCodeEditor("CNT.v", 105, 93); // cl (w, cp)
+selectCodeEditor("CNT.v", 105, 93, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("CNT.v", 145, 109); // cl (w, cp)
+selectCodeEditor("CNT.v", 123, 97); // cl (w, cp)
+selectCodeEditor("CNT.v", 123, 97, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("CNT.v", 291, 151); // cl (w, cp)
+selectCodeEditor("CNT.v", 203, 119); // cl (w, cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("CNT.v", 453, 133); // cl (w, cp)
+selectCodeEditor("CNT.v", 337, 175); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("CNT.v", 259, 199); // cl (w, cp)
+selectCodeEditor("CNT.v", 279, 307); // cl (w, cp)
+selectCodeEditor("CNT.v", 191, 27); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, REG (REG.v)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CNT.v", 1); // k (j, cp)
+selectCodeEditor("CNT.v", 153, 183); // cl (w, cp)
+selectCodeEditor("CNT.v", 395, 177); // cl (w, cp)
+selectCodeEditor("CNT.v", 393, 225); // cl (w, cp)
+// Elapsed time: 71 seconds
+selectCodeEditor("CNT.v", 319, 341); // cl (w, cp)
+selectCodeEditor("CNT.v", 319, 341, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("CNT.v", 133, 415); // cl (w, cp)
+selectCodeEditor("CNT.v", 133, 415, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("CNT.v", 295, 399); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("CNT.v", 325, 497); // cl (w, cp)
+selectCodeEditor("CNT.v", 245, 443); // cl (w, cp)
+selectCodeEditor("CNT.v", 233, 433); // cl (w, cp)
+selectCodeEditor("CNT.v", 233, 433, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("CNT.v", 203, 403); // cl (w, cp)
+selectCodeEditor("CNT.v", 203, 403, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("CNT.v", 119, 467); // cl (w, cp)
+selectCodeEditor("CNT.v", 119, 467, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("CNT.v", 145, 483); // cl (w, cp)
+selectCodeEditor("CNT.v", 145, 483, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("CNT.v", 53, 255); // cl (w, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("CNT.v", 171, 279); // cl (w, cp)
+selectCodeEditor("CNT.v", 677, 281); // cl (w, cp)

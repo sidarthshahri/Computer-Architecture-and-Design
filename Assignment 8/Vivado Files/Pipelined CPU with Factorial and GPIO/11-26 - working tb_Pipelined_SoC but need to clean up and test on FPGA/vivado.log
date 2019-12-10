@@ -1,0 +1,773 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 26 03:46:48 2019
+# Process ID: 8924
+# Current directory: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6364 C:\Users\Sidarth Shahri\Documents\CMPE 140 Assignments\Assignment 8\Pipelined_CPU_Factorial_GPIO\Pipelined_CPU_Factorial_GPIO.xpr
+# Log file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/vivado.log
+# Journal file: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 792.844 ; gain = 15.852
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Pipelined_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Pipelined_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_ERROR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_GT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DE_EX_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FE_DE_Stage_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_done_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_err_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module we_dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Pipelined_SoC
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 900.918 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b200007855ac49cca7e9b1a2a6aad211 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Pipelined_SoC_behav xil_defaultlib.tb_Pipelined_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.FE_DE_Stage_Reg
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.DE_EX_State_Reg
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.EX_MEM_State_Reg
+Compiling module xil_defaultlib.we_dreg
+Compiling module xil_defaultlib.MEM_WB_State_Reg
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.SoC_mux4
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.fact_reg(w=4)
+Compiling module xil_defaultlib.fact_reg(w=1)
+Compiling module xil_defaultlib.fact_reg
+Compiling module xil_defaultlib.CMP_ERROR
+Compiling module xil_defaultlib.CMP_GT
+Compiling module xil_defaultlib.CNT
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.REG
+Compiling module xil_defaultlib.DP
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.Factorial
+Compiling module xil_defaultlib.fact_and
+Compiling module xil_defaultlib.fact_mux4
+Compiling module xil_defaultlib.fact_done_stat_reg
+Compiling module xil_defaultlib.fact_err_stat_reg
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_reg
+Compiling module xil_defaultlib.gpio_mux4
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.Pipelined_SoC
+Compiling module xil_defaultlib.tb_Pipelined_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Pipelined_SoC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Pipelined_SoC_behav -key {Behavioral:sim_1:Functional:tb_Pipelined_SoC} -tclbatch {tb_Pipelined_SoC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_Pipelined_SoC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 480 ns : File "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" Line 120
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 900.918 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Pipelined_SoC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 900.918 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Pipelined_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Pipelined_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_ERROR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_GT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DE_EX_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FE_DE_Stage_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_done_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_err_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module we_dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Pipelined_SoC
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 900.918 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b200007855ac49cca7e9b1a2a6aad211 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Pipelined_SoC_behav xil_defaultlib.tb_Pipelined_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.FE_DE_Stage_Reg
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.DE_EX_State_Reg
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.EX_MEM_State_Reg
+Compiling module xil_defaultlib.we_dreg
+Compiling module xil_defaultlib.MEM_WB_State_Reg
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.SoC_mux4
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.fact_reg(w=4)
+Compiling module xil_defaultlib.fact_reg(w=1)
+Compiling module xil_defaultlib.fact_reg
+Compiling module xil_defaultlib.CMP_ERROR
+Compiling module xil_defaultlib.CMP_GT
+Compiling module xil_defaultlib.CNT
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.REG
+Compiling module xil_defaultlib.DP
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.Factorial
+Compiling module xil_defaultlib.fact_and
+Compiling module xil_defaultlib.fact_mux4
+Compiling module xil_defaultlib.fact_done_stat_reg
+Compiling module xil_defaultlib.fact_err_stat_reg
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_reg
+Compiling module xil_defaultlib.gpio_mux4
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.Pipelined_SoC
+Compiling module xil_defaultlib.tb_Pipelined_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Pipelined_SoC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Pipelined_SoC_behav -key {Behavioral:sim_1:Functional:tb_Pipelined_SoC} -tclbatch {tb_Pipelined_SoC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_Pipelined_SoC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 560 ns : File "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" Line 120
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Pipelined_SoC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 900.918 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Pipelined_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Pipelined_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_ERROR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_ERROR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CMP_GT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_GT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/DE_EX_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DE_EX_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/DP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/EX_MEM_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/FE_DE_Stage_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FE_DE_Stage_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/Factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/MEM_WB_State_Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_State_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/new/Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/Factorial/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/SoC_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_done_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_done_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_err_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_err_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sources_1/imports/sources/SoC/we_dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module we_dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Pipelined_SoC
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 900.918 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b200007855ac49cca7e9b1a2a6aad211 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Pipelined_SoC_behav xil_defaultlib.tb_Pipelined_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.FE_DE_Stage_Reg
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.DE_EX_State_Reg
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.EX_MEM_State_Reg
+Compiling module xil_defaultlib.we_dreg
+Compiling module xil_defaultlib.MEM_WB_State_Reg
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.SoC_mux4
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.fact_reg(w=4)
+Compiling module xil_defaultlib.fact_reg(w=1)
+Compiling module xil_defaultlib.fact_reg
+Compiling module xil_defaultlib.CMP_ERROR
+Compiling module xil_defaultlib.CMP_GT
+Compiling module xil_defaultlib.CNT
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.REG
+Compiling module xil_defaultlib.DP
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.Factorial
+Compiling module xil_defaultlib.fact_and
+Compiling module xil_defaultlib.fact_mux4
+Compiling module xil_defaultlib.fact_done_stat_reg
+Compiling module xil_defaultlib.fact_err_stat_reg
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_reg
+Compiling module xil_defaultlib.gpio_mux4
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.Pipelined_SoC
+Compiling module xil_defaultlib.tb_Pipelined_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Pipelined_SoC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Pipelined_SoC_behav -key {Behavioral:sim_1:Functional:tb_Pipelined_SoC} -tclbatch {tb_Pipelined_SoC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_Pipelined_SoC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 560 ns : File "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Pipelined_CPU_Factorial_GPIO/Pipelined_CPU_Factorial_GPIO.srcs/sim_1/new/tb_Pipelined_SoC.v" Line 120
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 900.918 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Pipelined_SoC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 900.918 ; gain = 0.000
+open_project {C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 973.613 ; gain = 15.371
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Single_Cycle_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim/memfile_with_nops.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim/memfile_with_nops.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_Single_Cycle_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CMP_ERROR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_ERROR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CMP_GT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP_GT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/DP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/Factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/new/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/Single_Cycle_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/SoC_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_done_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_done_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_err_stat_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_err_stat_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/imports/sources_1/new/we_dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module we_dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sim_1/new/tb_Single_Cycle_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Single_Cycle_SoC
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 981.063 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2661d587794f42a09b11bbe9a1119f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Single_Cycle_SoC_behav xil_defaultlib.tb_Single_Cycle_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.we_dreg
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.SoC_mux4
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.fact_reg(w=4)
+Compiling module xil_defaultlib.fact_reg(w=1)
+Compiling module xil_defaultlib.fact_reg
+Compiling module xil_defaultlib.CMP_ERROR
+Compiling module xil_defaultlib.CMP_GT
+Compiling module xil_defaultlib.CNT
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.REG
+Compiling module xil_defaultlib.DP
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.Factorial
+Compiling module xil_defaultlib.fact_and
+Compiling module xil_defaultlib.fact_mux4
+Compiling module xil_defaultlib.fact_done_stat_reg
+Compiling module xil_defaultlib.fact_err_stat_reg
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_reg
+Compiling module xil_defaultlib.gpio_mux4
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.Single_Cycle_SoC
+Compiling module xil_defaultlib.tb_Single_Cycle_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Single_Cycle_SoC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Single_Cycle_SoC_behav -key {Behavioral:sim_1:Functional:tb_Single_Cycle_SoC} -tclbatch {tb_Single_Cycle_SoC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_Single_Cycle_SoC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 250 ns : File "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sim_1/new/tb_Single_Cycle_SoC.v" Line 72
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1211.910 ; gain = 230.848
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Single_Cycle_SoC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1211.910 ; gain = 230.848
+current_project Pipelined_CPU_Factorial_GPIO
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Nov 26 03:57:27 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.runs/synth_1/runme.log
+[Tue Nov 26 03:57:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.runs/impl_1/runme.log

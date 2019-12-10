@@ -1,0 +1,13 @@
+srcscan starts
+INFO: analyzing module cmp (VERI-9002)
+INFO: analyzing module MUX (VERI-9002)
+INFO: analyzing module REG (VERI-9002)
+INFO: analyzing module CNT (VERI-9002)
+INFO: analyzing module mul (VERI-9002)
+INFO: analyzing module MUX (VERI-9002)
+C:/Users/SIDART~1/AppData/Local/Temp/VivadoEditorAssist13635398899777737924.tmp(3): WARNING: overwriting previous definition of module 'MUX' (VERI-1206)
+INFO: analyzing module REG (VERI-9002)
+C:/Users/SIDART~1/AppData/Local/Temp/VivadoEditorAssist11830844422578761878.tmp(3): WARNING: overwriting previous definition of module 'REG' (VERI-1206)
+INFO: analyzing module CNT (VERI-9002)
+C:/Users/SIDART~1/AppData/Local/Temp/VivadoEditorAssist1426227745189653780.tmp(3): WARNING: overwriting previous definition of module 'CNT' (VERI-1206)
+srcscan exits with return value 0

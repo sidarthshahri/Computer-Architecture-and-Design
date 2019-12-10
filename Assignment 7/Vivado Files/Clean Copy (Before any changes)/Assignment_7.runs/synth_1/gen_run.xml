@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-2L" LaunchTime="1572565895">
+  <File Type="PA-TCL" Name="mips_fpga.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mips_fpga_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="mips_fpga_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mips_fpga.vds"/>
+  <File Type="RDS-UTIL" Name="mips_fpga_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mips_fpga_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mips_fpga.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mips_fpga_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mips_fpga_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/adder.v"/>
+        <Attr Name="ImportTime" Val="1529310694"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/alu.v"/>
+        <Attr Name="ImportTime" Val="1529310932"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/auxdec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/auxdec.v"/>
+        <Attr Name="ImportTime" Val="1529302800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/validation_wrapper/button_debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/validation_wrapper/button_debouncer.v"/>
+        <Attr Name="ImportTime" Val="1529896808"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/validation_wrapper/clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/validation_wrapper/clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1529896826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/controlunit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/controlunit.v"/>
+        <Attr Name="ImportTime" Val="1532882706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/datapath.v"/>
+        <Attr Name="ImportTime" Val="1571709198"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/dmem.v"/>
+        <Attr Name="ImportTime" Val="1571713020"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/dreg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/dreg.v"/>
+        <Attr Name="ImportTime" Val="1529303352"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/validation_wrapper/hex_to_7seg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/validation_wrapper/hex_to_7seg.v"/>
+        <Attr Name="ImportTime" Val="1571710132"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/imem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/memory/imem.v"/>
+        <Attr Name="ImportTime" Val="1529321836"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/validation_wrapper/led_mux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/validation_wrapper/led_mux.v"/>
+        <Attr Name="ImportTime" Val="1532847256"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/maindec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/control_unit/maindec.v"/>
+        <Attr Name="ImportTime" Val="1529302754"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips.v"/>
+        <Attr Name="ImportTime" Val="1532882912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/mips/mips_top.v"/>
+        <Attr Name="ImportTime" Val="1571709156"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/mux2.v"/>
+        <Attr Name="ImportTime" Val="1529310740"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/regfile.v"/>
+        <Attr Name="ImportTime" Val="1571712976"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/signext.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/single_cycle_mips_source_initial/datapath/signext.v"/>
+        <Attr Name="ImportTime" Val="1529310666"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/validation_wrapper/mips_fpga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/validation_wrapper/mips_fpga.v"/>
+        <Attr Name="ImportTime" Val="1571720628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/memfile.dat">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Assignment 5/Vivado Files/Assignment_5.srcs/sim_1/imports/single_cycle_mips_source_initial/memfile.dat"/>
+        <Attr Name="ImportTime" Val="1527586448"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mips_fpga"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/validation_wrapper/mips_fpga.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/Downloads/PATCHED_MIPS_single_cycle/validation_wrapper/mips_fpga.xdc"/>
+        <Attr Name="ImportTime" Val="1547772168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

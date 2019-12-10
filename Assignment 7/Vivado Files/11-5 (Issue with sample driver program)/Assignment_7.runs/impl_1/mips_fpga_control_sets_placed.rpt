@@ -1,0 +1,166 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Nov  5 13:43:09 2019
+| Host         : DESKTOP-U1OB0E7 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file mips_fpga_control_sets_placed.rpt
+| Design       : mips_fpga
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   101 |
+| Unused register locations in slices containing registers |    84 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|    16+ |          100 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           20 |
+| No           | No                    | Yes                    |              96 |           34 |
+| No           | Yes                   | No                     |              33 |           10 |
+| Yes          | No                    | No                     |            1025 |          477 |
+| Yes          | No                    | Yes                    |             991 |          644 |
+| Yes          | Yes                   | No                     |            1023 |          344 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------+----------------------------------+------------------+----------------+
+|  Clock Signal  |              Enable Signal             |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------+----------------------------------+------------------+----------------+
+|  clk_pb_BUFG   |                                        |                                  |                1 |              1 |
+|  clk_IBUF_BUFG |                                        |                                  |               13 |             16 |
+|  clk_gen/CLK   |                                        |                                  |                6 |             19 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_12       | mips_top/mips/dp/alu/q_reg[3]_11 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_32       | mips_top/mips/dp/alu/q_reg[3]_31 |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_0        | mips_top/mips/dp/alu/q_reg[3]    |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_40       | mips_top/mips/dp/alu/q_reg[3]_39 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_26       | mips_top/mips/dp/alu/q_reg[3]_25 |                9 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_44       | mips_top/mips/dp/alu/q_reg[3]_43 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_30       | mips_top/mips/dp/alu/q_reg[3]_29 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_42       | mips_top/mips/dp/alu/q_reg[3]_41 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_46       | mips_top/mips/dp/alu/q_reg[3]_45 |                9 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_48       | mips_top/mips/dp/alu/q_reg[3]_47 |                9 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_36       | mips_top/mips/dp/alu/q_reg[3]_35 |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_50       | mips_top/mips/dp/alu/q_reg[3]_49 |                9 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_10       | mips_top/mips/dp/alu/q_reg[3]_9  |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_24       | mips_top/mips/dp/alu/q_reg[3]_23 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_28       | mips_top/mips/dp/alu/q_reg[3]_27 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_14       | mips_top/mips/dp/alu/q_reg[3]_13 |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_34       | mips_top/mips/dp/alu/q_reg[3]_33 |                9 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_20       | mips_top/mips/dp/alu/q_reg[3]_19 |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_2        | mips_top/mips/dp/alu/q_reg[3]_1  |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_38       | mips_top/mips/dp/alu/q_reg[3]_37 |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_16       | mips_top/mips/dp/alu/q_reg[3]_15 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_22       | mips_top/mips/dp/alu/q_reg[3]_21 |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_18       | mips_top/mips/dp/alu/q_reg[3]_17 |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_4        | mips_top/mips/dp/alu/q_reg[3]_3  |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_80       |                                  |               31 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_71       |                                  |               20 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_73       |                                  |               13 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_90       |                                  |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_76       |                                  |               15 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_81       |                                  |               13 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_8        | mips_top/mips/dp/alu/q_reg[3]_7  |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_69       |                                  |               13 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_82       |                                  |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_60       | mips_top/mips/dp/alu/q_reg[3]_59 |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_89       |                                  |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_87       |                                  |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_62       | mips_top/mips/dp/alu/q_reg[3]_61 |                9 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_91       |                                  |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_88       |                                  |               13 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_65       |                                  |               15 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_72       |                                  |               26 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_86       |                                  |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_94       |                                  |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_74       |                                  |               13 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_93       |                                  |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_54       | mips_top/mips/dp/alu/q_reg[3]_53 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_85       |                                  |               31 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_78       |                                  |               14 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_66       |                                  |               20 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_67       |                                  |               20 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_75       |                                  |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_83       |                                  |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_6        | mips_top/mips/dp/alu/q_reg[3]_5  |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_77       |                                  |               13 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_84       |                                  |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_64       | mips_top/mips/dp/alu/q_reg[3]_63 |               10 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_95       |                                  |               14 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_92       |                                  |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_70       |                                  |               17 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_52       | mips_top/mips/dp/alu/q_reg[3]_51 |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_56       | mips_top/mips/dp/alu/q_reg[3]_55 |                9 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_58       | mips_top/mips/dp/alu/q_reg[3]_57 |               11 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_68       |                                  |               12 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/alu/q_reg[3]_79       |                                  |               13 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_20[0] | rst_IBUF                         |               23 |             31 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_6     | rst_IBUF                         |               25 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_17    | rst_IBUF                         |               17 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_37[0] | rst_IBUF                         |               28 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[2]_10[0] | rst_IBUF                         |               20 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[2]_11[0] | rst_IBUF                         |               20 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[2]_9[0]  | rst_IBUF                         |               14 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[2]_8[0]  | rst_IBUF                         |               23 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_18[0] | rst_IBUF                         |               17 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_9[0]  | rst_IBUF                         |               20 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_13[0] | rst_IBUF                         |               21 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_19[0] | rst_IBUF                         |               21 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_15[0] | rst_IBUF                         |               14 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_12[0] | rst_IBUF                         |               23 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_10[0] | rst_IBUF                         |               28 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_11[0] | rst_IBUF                         |               23 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_14[0] | rst_IBUF                         |               30 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_8[0]  | rst_IBUF                         |               28 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_40[0] | rst_IBUF                         |               27 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_32[0] | rst_IBUF                         |               23 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_34[0] | rst_IBUF                         |               16 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_30[0] | rst_IBUF                         |               19 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_36[0] | rst_IBUF                         |               13 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_39[0] | rst_IBUF                         |               17 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_33[0] | rst_IBUF                         |               16 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_38[0] | rst_IBUF                         |               15 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_28[0] | rst_IBUF                         |               24 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_35[0] | rst_IBUF                         |               17 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[3]_7     | rst_IBUF                         |               22 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_31[0] | rst_IBUF                         |               21 |             32 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/q_reg[6]_29[0] | rst_IBUF                         |               19 |             32 |
+|  clk_IBUF_BUFG |                                        | rst_IBUF                         |               10 |             33 |
+|  clk_pb_BUFG   | mips_top/mips/dp/pc_reg/E[0]           |                                  |               17 |             64 |
+|  clk_pb_BUFG   |                                        | rst_IBUF                         |               34 |             96 |
++----------------+----------------------------------------+----------------------------------+------------------+----------------+
+
+

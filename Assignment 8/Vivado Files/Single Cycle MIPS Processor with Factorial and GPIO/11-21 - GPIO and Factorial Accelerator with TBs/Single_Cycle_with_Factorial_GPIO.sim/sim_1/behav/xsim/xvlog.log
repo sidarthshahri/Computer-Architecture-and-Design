@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sources_1/new/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sidarth Shahri/Documents/CMPE 140 Assignments/Assignment 8/Single_Cycle_with_Factorial_GPIO/Single_Cycle_with_Factorial_GPIO.srcs/sim_1/new/tb_gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_gpio_top
